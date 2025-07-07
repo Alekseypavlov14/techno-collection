@@ -28,7 +28,18 @@
   font-style: normal;
 }
 
-:root {}
+:root {
+  --primary-100: #C7A27E;
+  --primary-900: #F9F6F2;
+
+  --white-1000: #FFFFFF;
+  --black-1000: #000000;
+
+  --grey-100: #0B0C10;
+  --grey-200: #1D242D;
+  --grey-500: #909090;
+  --grey-900: #FBFBFB;
+}
 
 * {
   margin: 0;
