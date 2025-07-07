@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('./fonts/RobotoFlex-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('./fonts/RobotoFlex-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('./fonts/RobotoFlex-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('./fonts/RobotoFlex-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 1px;
+  min-height: 100%;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+.body--fixed {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* Null Styles */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Components */
+.button {}
+
+.container {}
+
+.section {}
+.section__title {}
+
+/* Content */
+.header {}
+
+.main {}
+
+.home-catalog {}
+
+.home-order {}
+
+.advantages {}
+
+.form {}
+
+.brands {}
+
+.home-about {}
+
+.home-articles {}
+
+.footer {}
