@@ -11,9 +11,64 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container header-top"></div>
+      <div class="container header-top">
+        <a href="/" class="logo">
+          <img src="./img/logo-light.svg">
+        </a>
+
+        <div class="header__center">
+          <div class="header-search">
+            <button class="header-search__button">
+              <img src="./img/header-search-catalog-icon.svg">
+              <span>Каталог товаров</span>
+            </button>
+
+            <input class="header-search__input">
+            <img class="header-search__icon" src="./img/header-search-icon.svg">
+          </div>
+
+          <div class="header-phone">
+            <a class="header-phone__link" href="tel:+73472008873">+7 (347) 200-88-73</a>
+            <div class="header-phone__hint">Вам перезвонить?</div>
+          </div>
+        </div>
+
+        <div class="header-icons">
+          <a href="#" class="header-icon">
+            <img src="./img/header-icons-heart.svg" alt="">
+            <div class="header-icon__text">Избранное</div>
+          </a>
+
+          <a href="#" class="header-icon">
+            <img src="./img/header-icons-comparisons.svg" alt="">
+            <div class="header-icon__text">Сравнение</div>
+          </a>
+
+          <a href="#" class="header-icon">
+            <img src="./img/header-icons-cart.svg" alt="">
+            <div class="header-icon__text">Корзина</div>
+          </a>
+        </div>
+      </div>
+
       <hr class="header-separator" />
-      <div class="container header-bottom"></div>
+
+      <div class="container header-bottom">
+        <nav class="header-nav">
+          <a href="#" class="header-nav__link">Бренды</a>
+          <a href="#" class="header-nav__link">Кредит и рассрочка</a>
+          <a href="#" class="header-nav__link">О нас</a>
+          <a href="#" class="header-nav__link">Фирменный магазин</a>
+          <a href="#" class="header-nav__link">Дизайнерам интерьера</a>
+          <a href="#" class="header-nav__link">Статьи и рейтинги</a>
+          <a href="#" class="header-nav__link">Скидки</a>
+        </nav>
+
+        <button class="header-customers">
+          <span>Покупателям</span>
+          <img src="./img/header-dropdown-arrow.svg" alt="">
+        </button>
+      </div>
     </header>
 
     <main class="main">
