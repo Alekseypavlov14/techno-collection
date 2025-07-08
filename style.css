@@ -483,7 +483,56 @@ label {
 
 .home-catalog {}
 
-.home-order {}
+.home-order {
+  position: relative;
+}
+.home-order img {
+  width: 100%;
+  border-radius: 30px;
+}
+.home-order-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--grey-200);
+  opacity: 0.3;
+  border-radius: 30px;
+}
+.home-order .container {
+  position: relative;
+}
+.home-order__content {
+  position: absolute;
+  max-width: 500px;
+  bottom: 65px;
+  right: 35px;
+
+  padding: 50px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  font-family: 'Roboto Flex';
+}
+.home-order__title {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--white-1000);
+  line-height: 1.1;
+}
+.home-order-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-1000);
+  line-height: 1.5;
+
+  margin-top: 30px;
+}
+.home-order__button {
+  margin-top: 40px;
+}
 
 .advantages {}
 
