@@ -16,11 +16,3 @@ headerCatalogDropdownTrigger.addEventListener('click', () => {
   headerCustomersDropdown.classList.remove(headerDropdownOpenedCSSClass)
   headerCatalogDropdown.classList.toggle(headerDropdownOpenedCSSClass)
 })
-
-// load icons
-const headerCatalogLinkIcons = Array.from(document.querySelectorAll('.header-catalog-dropdown-menu__link-icon'))
-const headerCatalogLinksDataPathAttribute = 'data-path'
-
-headerCatalogLinkIcons.forEach(icon => {
-  icon.style.setProperty('--path', icon.getAttribute(headerCatalogLinksDataPathAttribute))
-})
