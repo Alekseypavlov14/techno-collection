@@ -609,8 +609,8 @@ label {
 
 .home-about {
   background-color: var(--grey-900);
-  border-radius: 30px 30px 0 0;
-  padding: 90px 0;
+  border-radius: 30px 30px 0px 0px;
+  padding: 90px 0px;
 }
 .home-about .container {
   display: flex;
@@ -635,25 +635,26 @@ label {
 .home-about__content {
   flex: 1 1 auto;
   max-width: 50%;
+
   font-family: 'Roboto Flex', sans-serif;
-  gap: 35px;
+  
   display: flex;
   flex-direction: column;
+  gap: 35px;
 }
 .home-about__subtitle {
   color: var(--black-1000);
-  opacity: 1;
+  line-height: 1.5;
   font-size: 24px;
 }
 .home-about__text {
   color: var(--grey-500);
   line-height: 1.5;
 }
-.home-adout__advantages {
+.home-about__advantages {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 24px;
+  gap: 24px;
 }
 .home-about__advantages-card {
   display: flex;
@@ -665,11 +666,16 @@ label {
   padding: 35px 20px;
   border-radius: 10px;
 }
-.home-about__advantages-card__number {
+.home-about__advantages-number {
   font-size: 40px;
   font-weight: 600;
   color: var(--primary-100);
-  flex: 0 0 60px;
+  flex: 0 0 70px;
+}
+.home-about__advantages-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--black-1000);
 }
 
 .home-articles {}
