@@ -447,9 +447,11 @@ input {
 
 .advantages {}
 
+.form-background {
+  border-radius: 30px;
+}
 .form {
   background-color: var(--grey-900);
-  border-radius: 30px;
   padding: 90px 0;
 }
 .form .container {
@@ -560,8 +562,119 @@ input {
   opacity: 0.9;
 }
 
-.home-about {}
+.home-about {
+  background-color: var(--grey-900);
+  border-radius: 30px 30px 0 0;
+  padding: 90px 0;
+}
+.home-about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.home-about__image {
+  flex: 1 1 auto;
+  max-width: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 30px;
+  overflow: hidden;
+}
+.home-about__image img {
+  display: block;
+  height: 100%; 
+}
+.home-about__content {
+  flex: 1 1 auto;
+  max-width: 50%;
+  font-family: 'Roboto Flex';
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.home-about__subtitle {
+  color: var(--black-1000);
+  opacity: 1;
+  font-size: 24px;
+}
+.home-about__text {
+  color: var(--grey-500);
+  line-height: 1.5;
+}
+.home-adout__advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.home-about__advantages-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+  background-color: var(--white-1000);
+  padding: 35px 20px;
+  border-radius: 10px;
+}
+.home-about__advantages-card__number {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primary-100);
+  flex: 0 0 60px;
+}
 
 .home-articles {}
 
-.footer {}
+.footer {
+  background-color: var(--primary-900);
+  padding: 60px 0;
+  font-family: 'Roboto Flex';
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.footer-column__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-100);
+}
+.footer-column__text {
+  font-size: 14px;
+  color: var(--black-1000);
+  opacity: 0.7;
+}
+
+.footer-main-column {
+  gap: 0;
+}
+.footer-column__under-logo {
+  font-size: 12px;
+  color: var(--black-1000);
+  opacity: 0.7;
+  padding-top: 5px;
+}
+.footer__social-media__block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  margin-top: 25px;
+}
+.footer__social-media__icons {
+  display: flex;
+  gap: 10px;
+}
+
