@@ -18,7 +18,7 @@
 
         <div class="header__center">
           <div class="header-search">
-            <button class="header-search__button">
+            <button id="header-catalog-dropdown-trigger" class="header-search__button">
               <img src="./img/header-search-catalog-icon.svg">
               <span>Каталог товаров</span>
             </button>
@@ -70,7 +70,7 @@
         </button>
       </div>
 
-      <div id="header-customers-dropdown" class="header-customers-dropdown">
+      <div id="header-customers-dropdown" class="header-dropdown header-customers-dropdown">
         <div class="container">
           <a href="#" class="palette palette--hoverable header-customers-dropdown-item">
             <div class="header-customers-dropdown-item__title">
@@ -80,6 +80,7 @@
               Доставляем технику <br> по всей России
             </div>
             <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
             </div>
           </a>
 
@@ -91,6 +92,7 @@
               Самовывоз из фирменного магазина в г. Уфа
             </div>
             <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
             </div>
           </a>
 
@@ -102,6 +104,7 @@
               Гибкие условия оплаты с возможностью оформить кредит или рассрочку
             </div>
             <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
             </div>
           </a>
 
@@ -112,8 +115,6 @@
             <div class="header-customers-dropdown-item__text">
               Поможем подобрать технику для дома под имеющийся дизайн-проект или без него
             </div>
-            <div class="header-customers-dropdown-item__link">
-            </div>
           </div>
 
           <a href="#" class="palette palette--hoverable header-customers-dropdown-item">
@@ -122,6 +123,9 @@
             </div>
             <div class="header-customers-dropdown-item__text">
               Осуществляем монтаж и настройку техники
+            </div>
+            <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
             </div>
           </a>
 
@@ -132,6 +136,9 @@
             <div class="header-customers-dropdown-item__text">
               Осуществляем возврат техники ненадлежащего качества в течение 14 дней
             </div>
+            <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
+            </div>
           </a>
 
           <a href="#" class="palette palette--hoverable header-customers-dropdown-item">
@@ -140,6 +147,9 @@
             </div>
             <div class="header-customers-dropdown-item__text">
               Кэшбек до&nbsp;10% на всю технику Asco
+            </div>
+            <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
             </div>
           </a>
 
@@ -150,7 +160,58 @@
             <div class="header-customers-dropdown-item__text">
               Гарантия от производителя до 5 лет на все категории товаров
             </div>
+            <div class="header-customers-dropdown-item__link">
+              <img src="./img/header-customers-dropdown-arrow.svg">
+            </div>
           </a>
+        </div>
+      </div>
+
+      <div id="header-catalog-dropdown" class="header-dropdown header-catalog-dropdown">
+        <div class="header-catalog-dropdown__left">
+          <div class="header-catalog-dropdown-menu">
+            <div class="header-catalog-dropdown-menu__link">
+              <div class="header-catalog-dropdown-menu__link-icon" data-path="./img/header-catalog-dropdown-oven.png">
+              </div>
+              <div class="header-catalog-dropdown-menu__link-text">техника для кухни</div>
+            </div>
+
+            <div class="header-catalog-dropdown-menu__link">
+              <div class="header-catalog-dropdown-menu__link-icon"
+                data-path="./img/header-catalog-dropdown-washing-machine.png"></div>
+              <div class="header-catalog-dropdown-menu__link-text">техника по уходу за бельем</div>
+            </div>
+
+            <div class="header-catalog-dropdown-menu__link">
+              <div class="header-catalog-dropdown-menu__link-icon"
+                data-path="./img/header-catalog-dropdown-vacuum-cleaner.png"></div>
+              <div class="header-catalog-dropdown-menu__link-text">Техника для дома</div>
+            </div>
+
+            <div class="header-catalog-dropdown-menu__link">
+              <div class="header-catalog-dropdown-menu__link-icon"
+                data-path="./img/header-catalog-dropdown-shampoo.png">
+              </div>
+              <div class="header-catalog-dropdown-menu__link-text">Аксессуары и бытовая химия</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog-dropdown__right">
+          <div class="header-catalog-dropdown__title">Техника для кухни</div>
+          <div class="header-catalog-dropdown__links">
+            <a href="#" class="header-catalog-dropdown__link">Категория 1</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 2</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 3</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 4</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 5</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 6</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 7</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 8</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 9</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 10</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 11</a>
+            <a href="#" class="header-catalog-dropdown__link">Категория 12</a>
+          </div>
         </div>
       </div>
     </header>
