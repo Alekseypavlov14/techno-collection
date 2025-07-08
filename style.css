@@ -93,7 +93,26 @@ label {
 }
 
 /* Components */
-.button {}
+.button {
+  background-color: var(--primary-100);
+  color: var(--white-1000);
+
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0px;
+
+  cursor: pointer;
+
+  padding: 20px 50px;
+  border-radius: 100px;
+}
+.button--block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .container {
   max-width: 1340px;
@@ -738,13 +757,6 @@ label {
 }
 .form__button {
   margin-top: 10px;
-  padding: 17px 0;
-  border-radius: 50px;
-  background-color: var(--primary-100);
-
-  font-family: 'Roboto Flex', sans-serif;
-  color: var(--white-1000);
-  font-weight: 600;
 }
 .form__input {
   background-color: rgba(199, 162, 126, 0.1);
