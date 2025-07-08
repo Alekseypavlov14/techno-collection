@@ -94,6 +94,7 @@ label {
 
 /* Components */
 .button {
+  border: 1px solid var(--primary-100);
   background-color: var(--primary-100);
   color: var(--white-1000);
 
@@ -105,13 +106,19 @@ label {
 
   cursor: pointer;
 
-  padding: 20px 50px;
+  padding: 19px 50px;
   border-radius: 100px;
+
+  transition: 0.3s;
 }
 .button--block {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.button:hover {
+  background-color: var(--white-1000);
+  color: var(--primary-100);
 }
 
 .container {
@@ -205,6 +212,13 @@ label {
   gap: 15px;
 }
 .product-card__button {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 13px 25px;
+}
+.product-card__button:hover {
+  background-color: var(--white-1000);
+  color: var(--primary-100);
 }
 .product-card__icons {
   display: flex;
