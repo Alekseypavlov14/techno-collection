@@ -94,6 +94,9 @@ label {
 
 /* Components */
 .button {
+  display: block;
+  width: fit-content;
+
   border: 1px solid var(--primary-100);
   background-color: var(--primary-100);
   color: var(--white-1000);
@@ -627,12 +630,14 @@ label {
   color: #000000B3;
   text-transform: uppercase;
 
+  transition: 0.3s;
   cursor: pointer;
 }
 .home-catalog-nav__category:not(:last-child) {
   border-right: 1px solid #C7A27E1A;
 }
-.home-catalog-nav__category--active {
+.home-catalog-nav__category--active,
+.home-catalog-nav__category:hover {
   background-color: #C7A27E1A;
   color: var(--primary-100);
 }
@@ -649,10 +654,12 @@ label {
   font-size: 16px;
   letter-spacing: 0px;
   color: #000000B3;
-
+  
+  transition: 0.3s;
   cursor: pointer;
 }
-.home-catalog-nav__subcategory--active {
+.home-catalog-nav__subcategory--active,
+.home-catalog-nav__subcategory:hover {
   color: var(--primary-100);
 }
 .home-catalog-content {
@@ -661,6 +668,11 @@ label {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 24px;
+}
+.home-catalog-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .home-order {
