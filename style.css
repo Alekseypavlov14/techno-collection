@@ -536,14 +536,13 @@ label {
 
 .advantages {}
 
-.form-background {
+.home-hard-to-choose {
+  padding: 90px 0px;
   border-radius: 30px;
-}
-.form {
   background-color: var(--grey-900);
-  padding: 90px 0;
 }
-.form .container {
+
+.form {
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -732,6 +731,11 @@ label {
 }
 
 .home-articles {}
+
+.home-questions-or-propositions {
+  padding: 120px 0px;
+  background-color: var(--grey-900);
+}
 
 .footer {
   padding: 60px 0;
