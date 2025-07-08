@@ -218,6 +218,7 @@ label {
   font-weight: 500;
   font-size: 14px;
   padding: 13px 25px;
+  text-wrap: nowrap;
 }
 .product-card__button:hover {
   background-color: var(--white-1000);
@@ -592,6 +593,34 @@ label {
 }
 
 .main {}
+.main-categories {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+.main-categories__item {
+  width: 100%;
+  padding: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main-categories__item-image {
+  max-height: 120px;
+}
+.main-categories__item-title {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: var(--white-1000);
+}
 
 .home-catalog {
   padding-top: 90px;
@@ -654,7 +683,7 @@ label {
   font-size: 16px;
   letter-spacing: 0px;
   color: #000000B3;
-  
+
   transition: 0.3s;
   cursor: pointer;
 }
@@ -666,7 +695,7 @@ label {
   margin-top: 30px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 .home-catalog-footer {
@@ -813,7 +842,7 @@ label {
 
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   row-gap: 24px;
   column-gap: 24px;
 }
