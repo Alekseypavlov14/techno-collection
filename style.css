@@ -110,12 +110,6 @@ label {
   line-height: 1.2;
   letter-spacing: 0;
 }
-.section__subtitle {
-  font-size: 16px;
-  font-family: 'Roboto Flex';
-  line-height: 1.5;
-  opacity: 0.7;
-}
 
 .palette {
   display: block;
@@ -503,10 +497,9 @@ label {
 .form .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 25px;
 }
-.form-image {
+.form__image {
   flex: 1 1 auto;
   max-width: 50%;
 
@@ -516,19 +509,28 @@ label {
   border-radius: 30px;
   overflow: hidden;
 }
-.form-image img {
+.form__image img {
   display: block;
   height: 100%; 
 }
-.form-content {
+.form__content {
   flex: 1 1 auto;
-  padding-left: 40px;
+  padding: 60px 40px;
+
+  background-color: var(--white-1000);
+  border-radius: 30px;
 }
-.form-content__text-subtitle {
+.form__subtitle {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  opacity: 0.7;
+
   margin-top: 35px;
   max-width: 470px;
 }
-.form-content__panel {
+.form__panel {
   margin-top: 40px;
 
   display: flex;
@@ -537,7 +539,7 @@ label {
   
   gap: 30px;
 }
-.form-content__button {
+.form__button {
   margin-top: 10px;
   padding: 17px 0;
   border-radius: 50px;
@@ -547,17 +549,17 @@ label {
   color: var(--white-1000);
   font-weight: 600;
 }
-.form-content__input {
+.form__input {
   background-color: rgba(199, 162, 126, 0.1);
   color: var(--grey-100);
   padding: 17px 0;
   border-radius: 50px;
   padding-left: 20px;
 }
-.form-content__input:hover {
+.form__input:hover {
   background-color: rgba(199, 162, 126, 0.15);
 }
-.form-content__input::placeholder {
+.form__input::placeholder {
   color: var(--black-1000);
   opacity: 0.7;
   font-size: 14px;
