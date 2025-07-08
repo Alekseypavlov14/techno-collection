@@ -640,18 +640,20 @@ label {
   
   display: flex;
   flex-direction: column;
-  gap: 35px;
 }
 .home-about__subtitle {
+  margin-top: 35px;
   color: var(--black-1000);
   line-height: 1.5;
   font-size: 24px;
 }
 .home-about__text {
+  margin-top: 35px;
   color: var(--grey-500);
   line-height: 1.5;
 }
 .home-about__advantages {
+  margin-top: 45px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
