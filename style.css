@@ -536,7 +536,7 @@ input {
   background-color: var(--primary-100);
 
   font-family: 'Roboto Flex';
-  color: #ffffff;
+  color: var(--white-1000);
   font-weight: 600;
 }
 .form-content__input {
@@ -557,7 +557,48 @@ input {
 }
 
 
-.brands {}
+.brands {
+  padding: 120px 0;
+}
+.brands-title {
+  color: var(--white-1000);
+}
+.brands-block {
+  margin-top: 60px;
+
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 24px;
+  column-gap: 24px;
+}
+.brand-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-200);
+  border-radius: 20px;
+}
+.brand-card-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.brand-card__content-name {
+  color: var(--white-1000);
+  font-size: 28px;
+  opacity: 0.9;
+}
+.brand-card__content-text {
+  color: var(--white-1000);
+  font-family: 'Roboto Flex';
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 20px;
+  opacity: 0.9;
+}
 
 .home-about {}
 
