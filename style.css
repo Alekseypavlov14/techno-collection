@@ -100,7 +100,19 @@ input {
 }
 
 .section {}
-.section__title {}
+.section__title {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Roboto Flex';
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.section__subtitle {
+  font-size: 16px;
+  font-family: 'Roboto Flex';
+  line-height: 1.5;
+  opacity: 0.7;
+}
 
 .palette {
   display: block;
@@ -117,7 +129,7 @@ input {
 
 /* Content */
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background-color: var(--grey-100);
 }
@@ -340,7 +352,76 @@ input {
 
 .advantages {}
 
-.form {}
+.form {
+  background-color: var(--grey-900);
+  border-radius: 30px;
+  padding: 90px 0;
+}
+.form .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.form-image {
+  width: 100%;
+}
+.form-image img {
+  flex: 1 1 auto;
+  max-width: 100%; 
+
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 40px;
+  width: 100%;
+}
+.form-content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+.form-content__text-subtitle {
+  max-width: 470px;
+}
+.form-content__panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.form-content__button {
+  margin-top: 10px;
+  padding: 17px 0;
+  border-radius: 50px;
+  background-color: var(--primary-100);
+
+  font-family: 'Roboto Flex';
+  color: #ffffff;
+  font-weight: 600;
+}
+.form-content__input {
+  background-color: rgba(199, 162, 126, 0.1);
+  color: var(--grey-100);
+  padding: 17px 0;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+.form-content__input:hover {
+  background-color: rgba(199, 162, 126, 0.15);
+}
+.form-content__input::placeholder {
+  color: var(--black-1000);
+  opacity: 0.7;
+  font-size: 14px;
+  font-family: 'Roboto Flex';
+}
+
 
 .brands {}
 
