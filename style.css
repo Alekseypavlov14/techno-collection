@@ -957,6 +957,9 @@ label {
   grid-row-end: 4;
   grid-column-start: 2;
 }
+.advantages-block__card-photo img {
+  max-width: 100%;
+}
 .advantages-block__card {
   display: flex;
   justify-content: space-between;
@@ -1011,7 +1014,9 @@ label {
 }
 .form__image img {
   display: block;
-  height: 100%; 
+  height: 100%;
+  max-width: 600px;
+  border-radius: 30px;
 }
 .form__content {
   flex: 1 1 auto;
@@ -1128,7 +1133,9 @@ label {
 }
 .home-about__image img {
   display: block;
-  height: 100%; 
+  height: 100%;
+  max-width: 600px;
+  border-radius: 30px;
 }
 .home-about__content {
   flex: 1 1 auto;
