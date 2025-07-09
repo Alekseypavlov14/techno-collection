@@ -1083,11 +1083,11 @@ label {
   gap: 24px;
 }
 .brand-card {
+  min-height: 200px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey-200);
-  border-radius: 20px;
 }
 .brand-card--custom {
   display: flex;
