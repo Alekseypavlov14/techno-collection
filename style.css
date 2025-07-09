@@ -131,7 +131,9 @@ label {
   padding: 0px 10px;
 }
 
-.section {}
+.section {
+  width: 100%;
+}
 .section__title {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 50px;
