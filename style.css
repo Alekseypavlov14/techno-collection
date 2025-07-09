@@ -947,9 +947,8 @@ label {
 }
 .advantages-block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
   margin-top: 80px;
 }
 .advantages-block__card-photo {
@@ -1078,10 +1077,8 @@ label {
   margin-top: 60px;
 
   display: grid;
-  justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  row-gap: 24px;
-  column-gap: 24px;
+  gap: 24px;
 }
 .brand-card {
   display: flex;
@@ -1299,8 +1296,7 @@ label {
 .category__products .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  row-gap: 25px;
-  column-gap: 25px;
+  gap: 24px;
 
   font-family: 'Roboto Flex', 'sans-serif';
 }
