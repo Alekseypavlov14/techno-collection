@@ -481,6 +481,8 @@ label {
 }
 
 .banner {
+  --banner-max-width: 1660px;
+
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -506,8 +508,9 @@ label {
 
   display: block;
   object-fit: cover;
+  
   width: 100%;
-  max-width: 1600px;
+  max-width: var(--banner-max-width);
 }
 .banner .container {
   height: 100%;
@@ -557,7 +560,8 @@ label {
 .banner__bottom {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .rating-badge {
@@ -2024,16 +2028,39 @@ label {
 
 /*--------------------------about Us-----------------------------*/
 
-.banner-advantages .container {
+.banner-advantages {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  max-width: var(--banner-max-width);
 
-  background-color: rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background-color: #FFFFFF30;
 }
-.banner-advantages .home-about__advantages-card {
-  background: transparent;
+.banner-advantages__card {
+  padding: 25px 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banner-advantages__number {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  color: var(--white-1000);
+}
+.banner-advantages__text {
+  max-width: 180px;
+
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  color: var(--white-1000);
 }
 
 .about-us-advice {
