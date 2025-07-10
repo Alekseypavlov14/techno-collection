@@ -227,24 +227,29 @@ try {
   phoneNumberInputs.forEach(input => {
     input.value = formatPhoneNumber('')
 
+    input.addEventListener('focus', (e) => {
+      const value = e.target.value
+
+      const rawValue = getRawValue(value)
+      
+      // move cursor
+      const cursorPosition = getCursorPosition(rawValue)
+      input.setSelectionRange(cursorPosition, cursorPosition)
+    })
+
     input.addEventListener('input', (e) => {
       const value = e.target.value
 
       // get raw numeric value
-      const filteredValue = value
-        .split('')
-        .filter(char => char.match(/\d/))
-        .slice(1) // to remove country code
-        .join('')
-
+      const rawValue = getRawValue(value)
       // format value
-      const formattedValue = formatPhoneNumber(filteredValue)
+      const formattedValue = formatPhoneNumber(rawValue)
 
       // assign formatted value
       input.value = formattedValue
 
       // move cursor
-      const cursorPosition = getCursorPosition(filteredValue)
+      const cursorPosition = getCursorPosition(rawValue)
       input.setSelectionRange(cursorPosition, cursorPosition)
     })
   })
@@ -276,6 +281,13 @@ try {
 
     increment += 1 // last space
     return increment + value.length
+  }
+  function getRawValue(value) {
+    return value
+      .split('')
+      .filter(char => char.match(/\d/))
+      .slice(1) // to remove country code
+      .join('')
   }
 }
 catch {}
