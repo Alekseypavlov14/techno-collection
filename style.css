@@ -362,6 +362,10 @@ label {
 
   border-radius: 5px;
   background-color: #C7A27E1A;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tabs {
