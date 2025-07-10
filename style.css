@@ -241,10 +241,10 @@ label {
 }
 
 .container {
-  max-width: 1340px;
+  max-width: 1360px;
   width: 100%;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
 .section {
@@ -643,6 +643,9 @@ label {
 
   user-select: none;
   cursor: pointer;
+}
+.multiple-slider--light .multiple-slider__control {
+  background-color: #C7A27E1A;
 }
 .multiple-slider__control--left {
   transform: translateX(-50%);
@@ -2033,6 +2036,23 @@ label {
   color: var(--grey-500);
 }
 
+
+.other-brands {
+  background-color: var(--grey-900);
+  padding-top: 120px;
+}
+.other-brands__slider {
+  margin-top: 60px;
+}
+.other-brands-card {
+  background-color: #C7A27E12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.other-brands-card__image {
+  max-width: 100%;
+}
 
 /*--------------------------about Us-----------------------------*/
 
