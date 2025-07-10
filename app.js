@@ -219,6 +219,67 @@ try {
 }
 catch {}
 
+// ========== Forms ==========
+try {
+  const phoneNumberInputs = Array.from(document.querySelectorAll('[data-form-phone-number]'))
+  const phoneNumberCharacters = 10
+
+  phoneNumberInputs.forEach(input => {
+    input.value = formatPhoneNumber('')
+
+    input.addEventListener('input', (e) => {
+      const value = e.target.value
+
+      // get raw numeric value
+      const filteredValue = value
+        .split('')
+        .filter(char => char.match(/\d/))
+        .slice(1) // to remove country code
+        .join('')
+
+      // format value
+      const formattedValue = formatPhoneNumber(filteredValue)
+
+      // assign formatted value
+      input.value = formattedValue
+
+      // move cursor
+      const cursorPosition = getCursorPosition(filteredValue)
+      input.setSelectionRange(cursorPosition, cursorPosition)
+    })
+  })
+
+  function formatPhoneNumber(value) {
+    const paddedValue = value.padEnd(phoneNumberCharacters, '_')
+
+    let result = '+7 ('
+
+    result += paddedValue.slice(0, 3)
+    result += ') '
+    result += paddedValue.slice(3, 6)
+    result += ' '
+    result += paddedValue.slice(6, 8)
+    result += ' '
+    result += paddedValue.slice(8, 10)
+    
+    return result
+  }
+  function getCursorPosition(value) {
+    let increment = 4 // covers "+7 ("
+    if (value.length <= 3) return increment + value.length
+
+    increment += 2 // space and closing parenthesis
+    if (value.length <= 6) return increment + value.length
+
+    increment += 1 // second space
+    if (value.length <= 8) return increment + value.length
+
+    increment += 1 // last space
+    return increment + value.length
+  }
+}
+catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
