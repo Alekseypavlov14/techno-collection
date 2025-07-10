@@ -2035,3 +2035,38 @@ label {
 .banner-advantages .home-about__advantages-card {
   background: transparent;
 }
+
+.about-us-advice {
+  background-color: var(--grey-900);
+  padding: 90px 0;
+  margin-top: 120px;
+}
+.about-us-advice .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.advice-image img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+.advice-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-family: 'Roboto Flex', 'sans-serif';
+}
+.advice-title {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.advice-text {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  max-width: 470px;
+}
