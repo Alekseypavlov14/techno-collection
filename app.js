@@ -26,6 +26,30 @@ try {
 }
 catch {}
 
+// ========== Home Catalog ==========
+try {
+  const homeCatalogLinks = Array.from(document.querySelectorAll('[data-home-catalog-link]'))
+  const homeCatalogSubLinks = Array.from(document.querySelectorAll('[data-home-catalog-sub-link]'))
+  
+  const homeCatalogLinkActiveClassCSS = 'home-catalog-nav__category--active'
+  const homeCatalogSubLinkActiveClassCSS = 'home-catalog-nav__subcategory--active'
+
+  homeCatalogLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      homeCatalogLinks.forEach(link => link.classList.remove(homeCatalogLinkActiveClassCSS))
+      link.classList.add(homeCatalogLinkActiveClassCSS)
+    })
+  })
+
+  homeCatalogSubLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      homeCatalogSubLinks.forEach(link => link.classList.remove(homeCatalogSubLinkActiveClassCSS))
+      link.classList.add(homeCatalogSubLinkActiveClassCSS)
+    })
+  })
+}
+catch {}
+
 // ========== Tabs ==========
 try {
   const tabs = Array.from(document.querySelectorAll('[data-tabs]'))
