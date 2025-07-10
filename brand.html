@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-
 <body>
   <div class="wrapper">
+
     <header class="header">
       <div class="container header-top">
         <a href="/" class="logo">
@@ -170,33 +170,38 @@
       <div id="header-catalog-dropdown" class="header-dropdown header-catalog-dropdown">
         <div class="header-catalog-dropdown__left">
           <div class="header-catalog-dropdown-menu">
-            <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+            <a href="category.html">
+              <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника для кухни</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника для кухни</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника по уходу за бельем</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника по уходу за бельем</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника для дома</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника для дома</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Аксессуары и бытовая химия</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Аксессуары и бытовая химия</div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="header-catalog-dropdown__right">
@@ -220,117 +225,138 @@
     </header>
 
     <section class="banner banner--small">
-      <img class="banner__image" src="./img/category-banner.png">
+      <img class="banner__image" src="./img/category-banner-3.png">
 
       <div class="container">
         <div class="banner__content">
           <div class="breadcrumbs breadcrumbs--white banner__breadcrumbs">
             <span class="breadcrumbs__item">Главная</span>
-            <span class="breadcrumbs__item">Каталог</span>
-            <span class="breadcrumbs__item">Техника для кухни</span>
+            <span class="breadcrumbs__item">Бренды</span>
+            <span class="breadcrumbs__item">Miele</span>
           </div>
 
-          <div class="banner__center banner__title">ТЕХНИКА ДЛЯ КУХНИ</div>
+          <div class="banner__center banner__title">ТЕХНИКА и аксессуары MIELE</div>
         </div>
       </div>
     </section>
 
-    <section class="section subcategories">
+    <section class="section miele">
       <div class="container">
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-refrigerators.svg" alt="">
+        <div class="miele-content">
+          <div class="section__title">Бренд Miele</div>
+          <div class="miele__text">
+            Немецкий бренд премиальной бытовой техники, основанный в 1899 году. 
+            Первой продукцией компании были маслобойки и молочные сепараторы, однако со временем ассортимент расширялся. 
+            Руководство тратило огромные усилия на привлечение талантливых инженеров со всего мира. 
+            Это позволило создать мощную техническую базу – фундамент развития предприятия.
           </div>
-          <div class="subcategory-card__name">Холодильники и морозильники</div>
-          <div class="subcategory-card__quantity">(30)</div>
         </div>
-
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-hobs.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Варочные панели</div>
-          <div class="subcategory-card__quantity">(30)</div>
+        <div class="miele-image">
+          <img src="./img/miele-brand-image.png" alt="">
         </div>
+      </div>
+    </section>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-hoods.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Вытяжки</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+    <section class="section">
+      <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-refrigerators.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Холодильники и морозильники</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-ovens.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Духовые шкафы</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-hobs.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Варочные панели</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-dishwashers.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Посудомоечные машины</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-hoods.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Вытяжки</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-microwaves.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Микроволновые печи</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-ovens.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Духовые шкафы</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-vacuum-sealers.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Вакууматоры</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-dishwashers.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Посудомоечные машины</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-combi-panels.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Комби-панели, фритюрницы и грили</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-microwaves.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Микроволновые печи</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-steamers.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Пароварки</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-vacuum-sealers.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Вакууматоры</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-coffee-making.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Приготовление кофе</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-combi-panels.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Комби-панели, фритюрницы и грили</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-kitchen-sinks.svg" alt="">
-          </div>
-          <div class="subcategory-card__name">Кухонные мойки</div>
-          <div class="subcategory-card__quantity">(30)</div>
-        </div>
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-steamers.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Пароварки</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
 
-        <div class="subcategory-card palette palette--hoverable">
-          <div class="subcategory-card__image">
-            <img src="./img/subcategory-bakery-equipment.svg" alt="">
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-coffee-making.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Приготовление кофе</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
+
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-kitchen-sinks.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Кухонные мойки</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
+
+            <div class="subcategory-card palette palette--hoverable swiper-slide">
+              <div class="subcategory-card__image">
+                <img src="./img/subcategory-bakery-equipment.svg" alt="">
+              </div>
+              <div class="subcategory-card__name">Пекарское оборудование</div>
+              <div class="subcategory-card__quantity">(30)</div>
+            </div>
           </div>
-          <div class="subcategory-card__name">Пекарское оборудование</div>
-          <div class="subcategory-card__quantity">(30)</div>
         </div>
       </div>
     </section>
@@ -413,8 +439,8 @@
         </div>
       </div>
     </footer>
+
   </div>
   <script src="app.js"></script>
 </body>
-
 </html>
