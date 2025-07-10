@@ -1702,12 +1702,39 @@ label {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 24px;
-  row-gap: 40px;
+}
+.product-browser__header {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 3fr;
+  gap: 24px;
+}
+.product-browser__header {
+  margin-bottom: 40px;
+}
+.product-browser__header--palette {
+  padding: 10px 0px;
+  margin-bottom: 24px;
+}
+.product-browser__header--palette
+.product-browser__header-left {
+  padding-left: 40px;
+}
+.product-browser__header-left,
+.product-browser__header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.product-browser__header--palette .product-browser__header-right {
+  padding-right: 20px;
 }
 .product-browser__status {
+  background-color: var(--grey-200);
+
   padding: 10px 40px;
   border-radius: 8px;
-  background-color: var(--grey-200);
 
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -1715,15 +1742,10 @@ label {
   letter-spacing: 0px;
   color: var(--white-1000);
 }
-.product-browser__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
 .product-browser__badges {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .product-browser__badge {
@@ -1734,9 +1756,17 @@ label {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
+  letter-spacing: -0.5px;
   color: var(--white-1000);
 
   cursor: pointer;
+}
+.product-browser__header-title {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: var(--white-1000);
 }
 .product-browser-sort {
   font-family: 'Roboto Flex', sans-serif;
@@ -1788,7 +1818,9 @@ label {
 
   cursor: pointer;
 }
-/* .product-browser__result {} */
+.product-browser__result-header {
+  margin-bottom: 24px;
+}
 .product-browser__result-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

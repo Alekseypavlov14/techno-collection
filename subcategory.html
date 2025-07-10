@@ -242,57 +242,440 @@
       </div>
     </section>
 
-    <section class="section brand-articles section--round-top">
+    <section class="section product-browser">
       <div class="container">
-        <div class="brand-articles__title section__title">
-          Статьи и обзоры техники Miele
+        <div class="product-browser__header product-browser__header--palette palette">
+          <div class="product-browser__status">Всего 3500 товаров</div>
+
+          <div class="product-browser__header-right">
+            <div class="product-browser__header-title">
+              Техника для кухни / Холодильники и морозильники
+            </div>
+
+            <div class="product-browser-sort">
+              <span class="product-browser-sort__text">СОРТИРОВКА</span>
+            </div>
+          </div>
         </div>
 
-        <div class="brand-articles__content">
-          <a href="">
-            <div class="brand-articles__card">
-              <div class="brand-articles__card-image">
-                <img src="./img/brand-article-img-1.png" alt="">
-              </div>
-              <div class="brand-articles__card-info">
-                <div class="brand-articles__card-title">Наименование статьи</div>
-                <div class="brand-articles__card-text">Краткое описание в несколько строк</div>
+        <div class="product-browser-filters palette">
+          <div class="product-browser-filters__section">
+            <div class="product-browser-filters__title">ТЕХНИКА ДЛЯ КУХНИ</div>
+
+            <div class="product-browser-filters__content">
+              <div class="product-browser-filters__item">Категория 1</div>
+              <div class="product-browser-filters__item">Категория 2</div>
+              <div class="product-browser-filters__item">Категория 3</div>
+              <div class="product-browser-filters__item">Категория 4</div>
+              <div class="product-browser-filters__item">Категория 5</div>
+              <div class="product-browser-filters__item">Категория 6</div>
+              <div class="product-browser-filters__item">Категория 7</div>
+              <div class="product-browser-filters__item">Категория 8</div>
+              <div class="product-browser-filters__item">Категория 9</div>
+            </div>
+          </div>
+
+          <div class="product-browser-filters__section">
+            <div class="product-browser-filters__title">НАЛИЧИЕ</div>
+
+            <div class="product-browser-filters__content">
+              <label for="product-browser-in-stock" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-in-stock" class="checkbox__control">
+                  <label for="product-browser-in-stock" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Только в наличии</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="product-browser-filters__section">
+            <div class="product-browser-filters__title">ЦЕНА</div>
+
+            <div class="product-browser-filters__content">
+              <div class="range" data-range data-range-value-min="20000" data-range-value-max="150000">
+                <div class="range__control">
+                  <div data-range-track class="range__track"></div>
+                  <div class="range__thumb"></div>
+
+                  <div data-range-point-min class="range__point range__point--min"></div>
+                  <div data-range-point-max class="range__point range__point--max"></div>
+                </div>
+                <div class="range__hints">
+                  <div data-range-label-min class="range__hint"></div>
+                  <div data-range-label-max class="range__hint"></div>
+                </div>
               </div>
             </div>
-          </a>
-          <a href="">
-            <div class="brand-articles__card">
-              <div class="brand-articles__card-image">
-                <img src="./img/brand-article-img-2.png" alt="">
+          </div>
+
+          <div class="product-browser-filters__section">
+            <div class="product-browser-filters__title">БРЕНД</div>
+            <div class="product-browser-filters__content">
+              <label for="product-browser-brand-1" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-brand-1" class="checkbox__control">
+                  <label for="product-browser-brand-1" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Бренд 1</span>
+              </label>
+
+              <label for="product-browser-brand-2" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-brand-2" class="checkbox__control">
+                  <label for="product-browser-brand-2" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Бренд 2</span>
+              </label>
+
+              <label for="product-browser-brand-3" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-brand-3" class="checkbox__control">
+                  <label for="product-browser-brand-3" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Бренд 3</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="product-browser-filters__section">
+            <div class="product-browser-filters__title">СТРАНА</div>
+            <div class="product-browser-filters__content">
+              <label for="product-browser-country-1" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-country-1" class="checkbox__control">
+                  <label for="product-browser-country-1" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Страна 1</span>
+              </label>
+
+              <label for="product-browser-country-2" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-country-2" class="checkbox__control">
+                  <label for="product-browser-country-2" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Страна 2</span>
+              </label>
+
+              <label for="product-browser-country-3" class="product-browser-filters__item">
+                <div class="checkbox">
+                  <input type="checkbox" id="product-browser-country-3" class="checkbox__control">
+                  <label for="product-browser-country-3" class="checkbox__label">
+                    <img class="checkbox__check" src="./img/checkbox_check.svg" alt="" srcset="">
+                  </label>
+                </div>
+
+                <span>Страна 3</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-browser__result">
+          <div class="product-browser__result-header">
+            <div class="product-browser__badges">
+              <div class="product-browser__badge">Отдельностоящие холодильники</div>
+              <div class="product-browser__badge">Отдельностоящие холодильники-морозильники</div>
+              <div class="product-browser__badge">Отдельностоящие морозильники</div>
+              <div class="product-browser__badge">Встраиваемые морозильники</div>
+              <div class="product-browser__badge">Встраиваемые холодильники</div>
+              <div class="product-browser__badge">Встраиваемые холодильники-морозильники</div>
+            </div>
+          </div>
+
+          <div class="product-browser__result-grid">
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
               </div>
-              <div class="brand-articles__card-info">
-                <div class="brand-articles__card-title">Наименование статьи</div>
-                <div class="brand-articles__card-text">Краткое описание в несколько строк</div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
-          <a href="">
-            <div class="brand-articles__card">
-              <div class="brand-articles__card-image">
-                <img src="./img/brand-article-img-3.png" alt="">
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
               </div>
-              <div class="brand-articles__card-info">
-                <div class="brand-articles__card-title">Наименование статьи</div>
-                <div class="brand-articles__card-text">Краткое описание в несколько строк</div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
-          <a href="">
-            <div class="brand-articles__card">
-              <div class="brand-articles__card-image">
-                <img src="./img/brand-article-img-4.png" alt="">
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
               </div>
-              <div class="brand-articles__card-info">
-                <div class="brand-articles__card-title">Наименование статьи</div>
-                <div class="brand-articles__card-text">Краткое описание в несколько строк</div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
-          </a>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__image">
+                <img src="./img/product-card-image.png" alt="">
+              </div>
+
+              <div class="product-card__body">
+                <div class="product-card__title">Холодильник Liebherr T 1700</div>
+                <div class="product-card__text">
+                  <div class="product-card__line">Ручка двери: встроенная</div>
+                  <div class="product-card__line">Количество камер: 1</div>
+                </div>
+                <div class="product-card__price">
+                  45 000 ₽
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <button class="button product-card__button">В КОРЗИНУ</button>
+
+                <div class="product-card__icons">
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-statistic.svg" alt="">
+                  </div>
+                  <div class="product-card__icon">
+                    <img src="./img/product-card-icon-heard.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-browser__result-footer">
+            <button class="button">ЗАГРУЗИТЬ ЕЩЕ</button>
+          </div>
         </div>
       </div>
     </section>
