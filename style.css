@@ -510,11 +510,7 @@ label {
   object-fit: cover;
   
   width: 100%;
-<<<<<<< HEAD
-  max-width: 1550px;
-=======
   max-width: var(--banner-max-width);
->>>>>>> 01a236638552704f5991ed18d39a9a0125b95183
 }
 .banner .container {
   height: 100%;
