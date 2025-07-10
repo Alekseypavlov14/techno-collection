@@ -310,9 +310,53 @@ try {
 }
 catch {}
 
+// ========== Multiple slider ==========
+const multipleSliders = Array.from(document.querySelectorAll('[data-multiple-slider]'))
+
+multipleSliders.forEach(slider => {
+  const left = slider.querySelector('[data-multiple-slider-left]')
+  const right = slider.querySelector('[data-multiple-slider-right]')
+  const slides = slider.querySelector('[data-multiple-slider-slides]')
+  
+  let index = 0
+  
+  let maxIndex = computeMaxIndex()
+
+  left.addEventListener('click', () => {
+    index = clamp(0, index - 1, maxIndex)
+    updateIndex()
+  })
+  right.addEventListener('click', () => {
+    index = clamp(0, index + 1, maxIndex)
+    updateIndex()
+  })
+
+  function updateIndex() {
+    slider.style.setProperty('--index', index)
+  }
+
+  function computeMaxIndex() {
+    const sliderWidth = slider.getBoundingClientRect().width
+    const slidesWidth = slides.scrollWidth
+    
+    const slideWidth = parseFloat(getComputedStyle(slider).getPropertyValue('--card-width'))
+    const gap = parseFloat(getComputedStyle(slider).getPropertyValue('--gap'))
+
+    const maxIndex = Math.ceil((slidesWidth - sliderWidth) / (slideWidth + gap))
+    return Math.max(maxIndex, 0)
+  }
+})
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
   if (value > max) return max
   return value
+}
+function sum(array) {
+  return array.reduce((sum, item) => sum + item, 0)
+}
+function average(array) {
+  if (!array.length) return 0
+  return sum(array) / array.length
 }
