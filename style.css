@@ -39,6 +39,9 @@
   --grey-200: #1D242D;
   --grey-500: #909090;
   --grey-900: #FBFBFB;
+
+  --dropdowns-z-index: 10;
+  --content-overlay-z-index: 1;
 }
 
 * {
@@ -906,8 +909,137 @@ label {
 }
 
 .main {
+  padding-top: 30px;
   padding-bottom: 100px;
 }
+.main-slider {
+  width: 100%;
+  height: 550px;
+
+  position: relative;
+  overflow: hidden;
+}
+.main-slider__slides {
+  width: var(--width, 200%);
+  display: flex;
+
+  position: absolute;
+  left: calc(0% - var(--index, 0) * 100%);
+  top: 0;
+
+  transition: 1s left;
+}
+.main-slider__slide {
+  width: 100%;
+  position: relative;
+}
+.main-slider__image {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  max-width: 1600px;
+}
+.main-slider__content {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1260px;
+  padding: 0px 80px;
+  margin: 0 auto;
+}
+.main-slider__title {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
+.main-slider__subtitle {
+  margin-top: 60px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
+.main-slider__text {
+  margin-top: 15px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
+.main-slider__slide--catalog {
+  padding-top: 70px;
+}
+.main-slider__slide--catalog .button {
+  margin-top: 60px;
+}
+.main-slider__slide--offer {
+  padding-top: 60px;
+}
+.main-slider__slide--offer .main-slider__text {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
+.main-slider__slide--offer .button {
+  margin-top: 40px;
+}
+.main-slider__controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+}
+.main-slider__controls .container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-slider__control {
+  --size: 50px;
+
+  display: block;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  background-color: #FFFFFF30;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+}
+.main-slider__control--right {
+  transform-origin: center;
+  transform: rotateZ(180deg);
+}
+
 .categories {
   width: 100%;
 
