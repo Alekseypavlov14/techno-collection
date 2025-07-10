@@ -1375,24 +1375,29 @@ label {
 
 /*-------------------------------brand---------------------------------*/
 
-.miele {
+.brand-description {
   margin-top: 80px;
 }
-.miele .container{
+.brand-description .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 25px;
 }
-.miele-image img {
-  max-width: 600px;
+.brand-description__image {
+  flex: 0 0 50%;
   border-radius: 20px;
+  overflow: hidden;
 }
-.miele-content {
-  color: var(--white-1000);
+.brand-description__image img {
+  display: block;
+  width: 100%;
+}
+.brand-description__content {
   font-family: 'Roboto Flex', 'sans-serif';
+  color: var(--white-1000);
 }
-.miele__text {
+.brand-description__text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
