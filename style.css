@@ -1818,6 +1818,9 @@ label {
 
   cursor: pointer;
 }
+.product-browser-filters__item span {
+  user-select: none;
+}
 .product-browser__result-header {
   margin-bottom: 24px;
 }
