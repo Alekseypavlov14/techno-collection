@@ -1378,6 +1378,10 @@ label {
   border-radius: 5px;
   aspect-ratio: 1;
   width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-hard-to-choose {
