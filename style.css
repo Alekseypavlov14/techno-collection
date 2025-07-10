@@ -1205,14 +1205,11 @@ label {
 }
 
 .form {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 .form__image {
-  flex: 1 1 auto;
-  max-width: 50%;
-
   display: flex;
   justify-content: center;
 
@@ -1221,12 +1218,10 @@ label {
 }
 .form__image img {
   display: block;
-  height: 100%;
-  max-width: 600px;
+  width: 100%;
   border-radius: 30px;
 }
 .form__content {
-  flex: 1 1 auto;
   padding: 60px 40px;
 
   background-color: var(--white-1000);
