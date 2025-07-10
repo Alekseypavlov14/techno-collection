@@ -1999,7 +1999,7 @@ label {
   gap: 25px;
   width: 100%;
 }
-.brand-articles__card {
+.brand-articles-card {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -2008,18 +2008,27 @@ label {
 
   font-family: 'Roboto Flex', 'sans-serif';
 }
-.brand-articles__card-image img {
-  max-width: 100%;
+.brand-articles-card__image {
+  aspect-ratio: 31 / 36;
   border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.brand-articles__card-title {
+.brand-articles-card__image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.brand-articles-card__title {
   margin-top: 20px;
   font-size: 16px;
   text-transform: uppercase;
   color: var(--black-1000);
   font-weight: 500;
 }
-.brand-articles__card-text {
+.brand-articles-card__text {
   margin-top: 5px;
   color: var(--grey-500);
 }
