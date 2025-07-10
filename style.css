@@ -248,6 +248,10 @@ label {
 .section {
   width: 100%;
 }
+.section--round-top {
+
+}
+.section--round-bottom {}
 .section__title {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 50px;
@@ -1173,7 +1177,7 @@ label {
   display: flex;
   justify-content: center;
 }
-.advantade-icon {
+.advantage-icon {
   background-color: rgba(199, 162, 126, 0.1);
   border-radius: 5px;
   aspect-ratio: 1;
