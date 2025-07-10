@@ -292,6 +292,24 @@ try {
 }
 catch {}
 
+// ========== Product Browser ==========
+try {
+  const collapses = Array.from(document.querySelectorAll('[data-product-browser-collapse]'))
+  const collapseOpenedCSSClass = 'product-browser-filters-collapse--opened'
+  
+  collapses.forEach(collapse => {
+    const header = collapse.querySelector('[data-product-browser-collapse-header]')
+    const body = collapse.querySelector('[data-product-browser-collapse-body]')
+
+    if (!header || !body) return
+
+    header.addEventListener('click', () => {
+      collapse.classList.toggle(collapseOpenedCSSClass)
+    })
+  })
+}
+catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
