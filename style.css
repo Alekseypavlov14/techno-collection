@@ -532,6 +532,16 @@ label {
   text-align: center;
   text-transform: uppercase;
 }
+.banner__subtitle {
+  font-family: 'Roboto Flex', 'sans-serif';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-1000);
+  line-height: 1.4;
+  max-width: 380px;
+  text-align: center;
+  margin-top: 90px;
+}
 .banner__breadcrumbs {
   position: absolute;
   top: 60px;
@@ -542,6 +552,11 @@ label {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.banner__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .rating-badge {
@@ -1456,14 +1471,13 @@ label {
 }
 
 
-.brands {
-  padding: 120px 0;
-}
 .brands__title {
   color: var(--white-1000);
+  padding-top: 120px;
 }
 .brands__content {
   margin-top: 60px;
+  margin-bottom: 100px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1499,6 +1513,7 @@ label {
 .home-about {
   background-color: var(--grey-900);
   padding: 90px 0px;
+  margin-top: 120px;
 }
 .home-about .container {
   display: flex;
@@ -1881,4 +1896,19 @@ label {
 .brand-articles__card-text {
   margin-top: 5px;
   color: var(--grey-500);
+}
+
+
+/*--------------------------about Us-----------------------------*/
+
+.banner-advantages .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.banner-advantages .home-about__advantages-card {
+  background: transparent;
 }
