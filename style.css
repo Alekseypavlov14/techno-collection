@@ -2431,3 +2431,35 @@ p {
 .about-us-advice__button {
   margin-top: 50px;
 }
+
+/*--------------------------------credits----------------------------------*/
+
+.paymant-methods {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.paymant-methods .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+
+  font-family: 'Roboto Flex', 'sans-serif';
+}
+.payment-methods__card {
+  padding: 50px;
+}
+.payment-methods__card-title {
+  font-size: 30px;
+  font-family: 500;
+  line-height: 1.5;
+  color: var(--white-1000);
+}
+.payment-methods__card-list {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.payment-methods__card-list ul li{
+  font-size: 18px;
+  color: var(--white-1000);
+  margin-top: 10px;
+}
