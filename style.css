@@ -513,6 +513,7 @@ p {
   --banner-max-width: 1660px;
 
   width: 100%;
+
   position: relative;
   overflow: hidden;
 
@@ -531,14 +532,15 @@ p {
 }
 .banner__image {
   position: absolute;
-  top: 0px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
   display: block;
+
   object-fit: cover;
   
-  width: 100%;
+  min-width: 100%;
   max-width: var(--banner-max-width);
 }
 .banner .container {
@@ -2432,8 +2434,48 @@ p {
   margin-top: 50px;
 }
 
+/*--------------------------------credits----------------------------------*/
 
-/*-------------------------- About us -----------------------------*/
+.payment-methods {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.payment-methods .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+
+  font-family: 'Roboto Flex', 'sans-serif';
+}
+.payment-methods__card {
+  padding: 50px;
+}
+.payment-methods__card-title {
+  font-size: 30px;
+  font-family: 500;
+  line-height: 1.5;
+  color: var(--white-1000);
+}
+.payment-methods__card-list {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.payment-methods__card-list ul li{
+  font-size: 18px;
+  color: var(--white-1000);
+  margin-top: 10px;
+}
+
+/*---------------------------------ratings----------------------------*/
+
+.rating-articles {
+  background-color: transparent;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+
+/*-------------------------- designers -----------------------------*/
 .algorithm {
   padding: 120px 0px;
 }
