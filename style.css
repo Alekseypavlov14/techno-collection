@@ -1546,7 +1546,7 @@ p {
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  gap: 24px;
 }
 .form__image {
   display: flex;
@@ -1656,7 +1656,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 24px;
 }
 .home-about__image {
   flex: 1 1 auto;
@@ -2023,7 +2023,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 24px;
 }
 .brand-description__image {
   flex: 0 0 50%;
@@ -2081,7 +2081,7 @@ p {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+  gap: 24px;
   width: 100%;
 }
 .brand-articles-card {
@@ -2559,7 +2559,7 @@ p {
 .payment-methods .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 24px;
 
   font-family: 'Roboto Flex', 'sans-serif';
 }
@@ -2655,6 +2655,33 @@ p {
 
 
 /*-------------------------- designers -----------------------------*/
+.designer-banner__content {
+  max-width: 1150px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.designer-banner__title {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+  text-transform: uppercase;
+}
+.designer-banner__subtitle {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
+.designer-banner__button {
+  margin-top: 60px;
+}
+
 .reward {
   width: 100%;
 }
