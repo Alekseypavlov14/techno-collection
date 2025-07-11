@@ -363,7 +363,7 @@ previews.forEach(preview => {
   })
 })
 
-// ========== Utils ==========
+// ========== Algorithm ==========
 try {
   const algorithmBlocks = Array.from(document.querySelectorAll('[data-algorithm]'))
   const stepActiveCSSClass = 'algorithm-step--active'
@@ -402,6 +402,18 @@ try {
 }
 catch {}
 
+//======== questions ========
+try {
+  const openedModifier = 'question--opened'
+  
+  document.querySelectorAll('[data-question]').forEach(block => {
+    block.addEventListener('click', () => {
+      block.classList.toggle(openedModifier)
+    })
+  })
+}
+catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
@@ -415,12 +427,3 @@ function average(array) {
   if (!array.length) return 0
   return sum(array) / array.length
 }
-
-//======== questions ========
-const openedModifier = 'question--opened'
-
-document.querySelectorAll('.question').forEach(block => {
-  block.addEventListener('click', () => {
-    block.classList.toggle(openedModifier)
-  })
-})
