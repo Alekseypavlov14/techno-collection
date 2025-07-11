@@ -2348,6 +2348,12 @@ p {
   margin-top: 70px;
 }
 
+.product-info__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
 .product-recommendations {
   width: 100%;
   padding-bottom: 100px;
