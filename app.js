@@ -376,3 +376,12 @@ function average(array) {
   if (!array.length) return 0
   return sum(array) / array.length
 }
+
+//======== questions ========
+const openedModifier = 'question--opened'
+
+document.querySelectorAll('.question').forEach(block => {
+  block.addEventListener('click', () => {
+    block.classList.toggle(openedModifier)
+  })
+})
