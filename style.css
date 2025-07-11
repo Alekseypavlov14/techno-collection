@@ -2363,6 +2363,12 @@ p {
   text-transform: uppercase;
   color: var(--white-1000);
 }
+.product-info__subtitle {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: var(--white-1000);
+}
 .product-info-rating {
   display: flex;
   align-items: center;
