@@ -364,6 +364,45 @@ previews.forEach(preview => {
 })
 
 // ========== Utils ==========
+try {
+  const algorithmBlocks = Array.from(document.querySelectorAll('[data-algorithm]'))
+  const stepActiveCSSClass = 'algorithm-step--active'
+  
+  algorithmBlocks.forEach(block => {
+    // get steps
+    const stepsContainer = document.querySelector('[data-algorithm-steps]')
+    const steps = Array.from(document.querySelectorAll('[data-algorithm-step]'))
+    
+    // set placeholder height to allow sticky
+    block.style.setProperty('--placeholder-height', `${stepsContainer.scrollHeight}px`)
+    // set steps z-indexes
+    steps.forEach((step, index) => step.style.setProperty('--step', index + 1))
+
+    // compute max deviations
+    const maxDeviations = steps.map(step => {
+      return step.getBoundingClientRect().top - steps[0].getBoundingClientRect().top
+    })
+
+    // handle scroll
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY - block.offsetTop
+
+      steps.forEach((step, index) => {
+        const deviation = clamp(0, scrolled, maxDeviations[index])
+        step.style.setProperty('--deviation', `${-deviation}px`)
+
+        // update current step
+        if (scrolled > maxDeviations[index]) {
+          steps.forEach(step => step.classList.remove(stepActiveCSSClass))
+          step.classList.add(stepActiveCSSClass)
+        }
+      })
+    })
+  })
+}
+catch {}
+
+// ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
   if (value > max) return max
