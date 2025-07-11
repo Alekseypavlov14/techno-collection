@@ -274,6 +274,9 @@ label {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+.section--overlap {
+  margin-top: -30px;
+}
 .section__title {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 50px;
@@ -1395,7 +1398,6 @@ label {
 }
 
 .home-order {
-  margin-top: -30px;
   position: relative;
 }
 .home-order img {
