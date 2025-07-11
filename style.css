@@ -284,6 +284,9 @@ label {
   line-height: 1.5;
   letter-spacing: 0;
 }
+.section__title--white {
+  color: var(--white-1000);
+}
 
 .palette {
   display: block;
@@ -674,13 +677,24 @@ label {
 }
 
 .product-characteristics {
+  width: 100%;
+
+  --title-color: var(--black-1000);
+  --text-color: #000000B3;
+}
+.product-characteristics--white {
+  --title-color: var(--white-1000);
+  --text-color: var(--white-1000);
+}
+.product-characteristics__title {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.05;
-  color: var(--black-1000);
+  color: var(--title-color);
 }
-.product-characteristics__title {
+.product-characteristics--big .product-characteristics__title {
+  font-size: 30px;
 }
 .product-characteristics__body {
   margin-top: 25px;
@@ -689,11 +703,14 @@ label {
   flex-direction: column;
   gap: 12px;
 }
+.product-characteristics--big .product-characteristics__body {
+  margin-top: 30px;
+}
 .product-characteristics__line {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #000000B3;
+  color: var(--text-color);
 }
 
 /* Content */
@@ -2281,6 +2298,48 @@ label {
 }
 .product-description__info .product-characteristics {
   margin-top: 50px;
+}
+
+.product-info {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  
+  background-color: var(--grey-100);
+}
+.product-info-tabs .tabs__header {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  border: 1px solid #FFFFFF80;
+}
+.product-info-tabs .tabs__link {
+  min-width: 0px;
+  background-color: var(--grey-200);
+  color: var(--white-1000);
+}
+.product-info-tabs .tabs__link:not(:last-child) {
+  border-right-color: #FFFFFF80;
+}
+.product-info-tabs .tabs__link--active {
+  background-color: var(--primary-100);
+}
+.product-info-tabs .tabs__body {
+  margin-top: 70px;
+}
+
+.product-recommendations {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.product-recommendations__cards {
+  width: 100%;
+  margin-top: 60px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
 }
 
 /*-------------------------- About us -----------------------------*/
