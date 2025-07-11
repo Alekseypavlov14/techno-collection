@@ -412,6 +412,9 @@ p {
   border-radius: 15px;
   overflow: hidden;
 }
+.tabs--dark .tabs__header {
+  border-color: transparent;
+}
 .tabs__link {
   flex: 0 0 380px;
 
@@ -439,6 +442,17 @@ p {
 .tabs__link--active,
 .tabs__link:hover {
   background-color: var(--white-1000);
+}
+.tabs--dark .tabs__link {
+  background-color: var(--grey-200);
+  color: var(--white-1000);
+}
+.tabs--dark .tabs__link:not(:last-child) {
+  border-right: 2px solid transparent;
+}
+.tabs--dark .tabs__link--active,
+.tabs--dark .tabs__link:hover {
+  background-color: var(--primary-100);
 }
 .tabs__body {
   margin-top: 40px;
