@@ -2655,6 +2655,51 @@ p {
 
 
 /*-------------------------- designers -----------------------------*/
+.reward {
+  width: 100%;
+}
+.reward__badge {
+  padding: 60px 0px;
+  border-radius: 30px;
+  background-color: var(--white-1000);
+
+  position: relative;
+  z-index: 1;
+}
+.reward__badge .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.reward__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .reward__text {} */
+.reward__title {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: var(--black-1000);  
+}
+.reward__button {
+  margin-top: 40px;
+}
+.reward__image {
+  width: 100%;
+  margin-top: -150px;
+
+  border-radius: 0px 0px 30px 30px;
+  overflow: hidden;
+}
+.reward__image img {
+  display: block;
+  width: 100%;
+}
+
 .algorithm {
   padding: 120px 0px;
 }
