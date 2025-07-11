@@ -94,6 +94,10 @@ label {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 /* Components */
 .button {
   display: block;
@@ -282,10 +286,13 @@ label {
   font-size: 50px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0;
+  letter-spacing: 0px;
 }
 .section__title--white {
   color: var(--white-1000);
+}
+.section__title--compact {
+  line-height: 1.3;
 }
 
 .palette {
@@ -1458,9 +1465,6 @@ label {
 .advantages {
   margin-top: 120px;
 }
-.advantages-title {
-  color: var(--white-1000);
-}
 .advantages-block__card-photo img {
   border-radius: 15px;
 }
@@ -1584,8 +1588,7 @@ label {
 }
 
 
-.brands__title {
-  color: var(--white-1000);
+.brands {
   padding-top: 120px;
 }
 .brands__content {
@@ -2386,30 +2389,45 @@ label {
 }
 .about-us-advice .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
-.advice-image img {
-  max-width: 100%;
+.about-us-advice__image {
   border-radius: 30px;
-}
-.advice-content {
+  overflow: hidden;
+
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: start;
-  font-family: 'Roboto Flex', 'sans-serif';
 }
-.advice-title {
+.about-us-advice img {
+  width: 100%;
+  min-height: 100%;
+}
+.about-us-advice__content {
+  padding: 70px 40px;
+  border-radius: 30px;
+  background-color: var(--white-1000);
+}
+.about-us-advice__title {
+  font-family: 'Roboto Flex', 'sans-serif';
   font-size: 34px;
   font-weight: 500;
   line-height: 1.2;
 }
-.advice-text {
+.about-us-advice__text {
+  max-width: 470px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  font-family: 'Roboto Flex', 'sans-serif';
   font-size: 16px;
   line-height: 1.5;
-  opacity: 0.7;
   margin-top: 40px;
-  margin-bottom: 50px;
-  max-width: 470px;
+  color: #000000B3;
+}
+.about-us-advice__button {
+  margin-top: 50px;
 }
