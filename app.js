@@ -347,6 +347,22 @@ multipleSliders.forEach(slider => {
   }
 })
 
+// ========== Preview ==========
+const previews = Array.from(document.querySelectorAll('[data-preview]'))
+
+previews.forEach(preview => {
+  const options = preview.querySelectorAll('[data-preview-option]')
+  const current = preview.querySelector('[data-preview-current]')
+  const image = current.querySelector('img')
+
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const src = option.getAttribute('data-preview-option')
+      image.setAttribute('src', src)
+    })
+  })
+})
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min
