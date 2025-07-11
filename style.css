@@ -2759,3 +2759,12 @@ p {
   width: 100%;
   height: var(--placeholder-height, 100dvh);
 }
+
+
+
+.design-advantages .advantages-block__card-photo {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
