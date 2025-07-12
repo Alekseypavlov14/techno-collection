@@ -1626,30 +1626,57 @@ p {
   gap: 24px;
 }
 .brand-card {
+  --size: 200px;
+
   min-height: 200px;
+  padding: 30px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  cursor: pointer;
 }
-.brand-card--custom {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 0 30px;
+.brand-card__image {
+  max-height: 80px;
+  display: block;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: 0.5s all;
 }
-.brand-card__title {
-  color: var(--white-1000);
-  font-size: 28px;
-  opacity: 0.9;
+.brand-card:hover .brand-card__image {
+  max-height: 30px;
+
+  top: 30px;
+  left: 30px;
+
+  transform: none;
 }
 .brand-card__text {
+  display: block;
+  padding: 0px 30px;
+
   color: var(--white-1000);
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 20px;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  transition: 0.5s;
+}
+.brand-card:hover .brand-card__text {
+  top: 90px;
 }
 
 .home-about {
