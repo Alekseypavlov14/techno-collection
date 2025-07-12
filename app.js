@@ -414,6 +414,31 @@ try {
 }
 catch {}
 
+//============== scrolable block home ================//
+try {
+  const scalableBlocks = Array.from(document.querySelectorAll('[data-scalable-image-block]'))
+  
+  const MINIMAL_SCALE = 0.8
+  const MAXIMUM_SCALE = 1
+
+  scalableBlocks.forEach(block => {
+    const image = document.querySelector('[data-scalable-image]');
+    
+    window.addEventListener('scroll', () => {
+      const minimalScroll = block.offsetTop - window.innerHeight
+      const maximumScroll = block.offsetTop
+
+      const ratio = (window.scrollY - minimalScroll) / (maximumScroll - minimalScroll)
+      const scale = MINIMAL_SCALE + (MAXIMUM_SCALE - MINIMAL_SCALE) * ratio
+
+      const adjustedScale = clamp(MINIMAL_SCALE, scale, MAXIMUM_SCALE)
+
+      image.style.setProperty('--scale', adjustedScale)
+    });
+  })
+
+} catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min

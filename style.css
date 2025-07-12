@@ -741,6 +741,11 @@ p {
   color: var(--text-color);
 }
 
+.scrollable-image {
+  transform: scale(var(--scale, 1));
+  transform-origin: center;
+}
+
 /* Content */
 .wrapper {
   min-height: 100%;
