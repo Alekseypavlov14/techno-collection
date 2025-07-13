@@ -1939,6 +1939,19 @@ p {
 
   font-size: 14px;
 }
+@media (max-width: 1150px) {
+  .footer-column {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 798px) {
+  .footer-column__button {
+    display: none;
+  }
+  .footer__development {
+    margin-top: 40px;
+  }
+}
 
 
 
