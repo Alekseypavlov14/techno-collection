@@ -3065,15 +3065,14 @@ p {
 }
 .algorithm-step__number {
   --size: 40px;
-  --delta: 25px;
 
   width: var(--size);
   height: var(--size);
   border-radius: 5px;
 
   position: absolute;
-  top: var(--delta);
-  right: var(--delta);
+  top: 25px;
+  right: 25px;
 
   display: flex;
   align-items: center;
@@ -3092,7 +3091,45 @@ p {
   width: 100%;
   height: var(--placeholder-height, 100dvh);
 }
+@media (max-width: 900px) {
+  .algorithm__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .algorithm__steps {
+    height: fit-content;
 
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+  }
+  .algorithm-step {
+    flex: 0 0 100%;
+    transform: none;
+  }
+  .algorithm-step__content {
+    padding: 25px 20px;
+  }
+  .algorithm-step--active .algorithm-step__content {
+    background-color: transparent;
+  }
+  .algorithm-step__number {
+    --size: 35px;
+   
+    top: 20px;
+    right: 15px;
+
+    font-size: 22px;
+  }
+  .algorithm-step__title {
+    font-size: 16px;
+  }
+  .algorithm-step__text {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
 
 
 .design-advantages .advantages-block__card-photo {
