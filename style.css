@@ -822,6 +822,11 @@ p {
   transform: scale(var(--scale, 1));
   transform-origin: center;
 }
+@media (max-width: 1150px) {
+  .scrollable-image {
+    transform: none;
+  }
+}
 
 /* Content */
 .wrapper {
