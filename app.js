@@ -439,6 +439,17 @@ try {
 
 } catch {}
 
+// ========== Burger button ==========
+const burgerButtons = Array.from(document.querySelectorAll('[data-burger-button]'))
+
+const burgerButtonActiveCSSClass = 'burger-button--active'
+
+burgerButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle(burgerButtonActiveCSSClass)
+  })
+})
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min

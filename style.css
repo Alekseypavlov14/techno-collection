@@ -814,6 +814,7 @@ p {
 }
 .header-search__input {
   display: block;
+  min-width: 0px;
   flex: 1 1 auto;
 
   background-color: transparent;
@@ -846,6 +847,9 @@ p {
   color: var(--white-1000);
   margin-top: 5px;
 }
+.header-call {
+  display: none;
+}
 .header-icons {
   display: flex;
   align-items: center;
@@ -871,6 +875,66 @@ p {
   font-size: 13px;
   letter-spacing: 0px;
   color: var(--white-1000);
+}
+.burger-button {
+  --block-height: 30px;
+  --icon-height: 8px;
+  --line-outline-size: 1px;
+  --ratio: 1.8;
+
+  height: var(--block-height);
+  width: var(--block-height);
+  flex: 0 0 var(--block-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--grey-200);
+  border-radius: var(--block-height);
+  
+  user-select: none;
+  display: none;
+}
+.burger-button__lines {
+  width: calc(var(--icon-height) * var(--ratio));
+  height: var(--icon-height);
+  
+  cursor: pointer;
+  position: relative;
+}
+.burger-button__lines::before,
+.burger-button__lines::after {
+  content: '';
+
+  position: absolute;
+  left: 0px;
+
+  display: block;
+  box-sizing: border-box;
+  transform-origin: center;
+  
+  width: 100%;
+  border: var(--line-outline-size) solid var(--white-1000);
+  opacity: 0.7;
+  
+  transition: 0.3s;
+}
+.burger-button__lines::before {
+  top: 0px;
+}
+.burger-button__lines::after {
+  bottom: 0px;
+}
+.burger-button--active .burger-button__lines::before {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+}
+.burger-button--active .burger-button__lines::after {
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%) translateY(50%) rotateZ(-45deg);
 }
 .header-separator {
   border: none;
@@ -914,6 +978,46 @@ p {
   font-size: 14px;
   letter-spacing: 0px;
   text-transform: uppercase;
+}
+@media (max-width: 1150px) {
+  .logo {
+    max-height: 30px;
+  }
+  .header-search {
+    padding-right: 10px;
+  }
+  .header-search__button {
+    padding: 8px;
+  }
+  .header-search__button img {
+    height: 14px;
+  }
+  .header-search__button span {
+    display: none;
+  }
+  .header-search__icon {
+    height: 14px;
+  }
+  .header-phone {
+    display: none;
+  }
+  .header-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-icons {
+    display: none;
+  }
+  .burger-button {
+    display: flex;
+  }
+  .header-separator {
+    display: none;
+  }
+  .header-bottom {
+    display: none;
+  }
 }
 
 .header-dropdown {
