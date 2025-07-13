@@ -272,6 +272,11 @@ p {
   margin: 0px auto;
   padding: 0px 20px;
 }
+@media (max-width: 798px) {
+  .container {
+    padding: 0px 10px;
+  }
+}
 
 .section {
   width: 100%;
@@ -469,6 +474,17 @@ p {
 }
 .tabs__page:not(.tabs__page--active) {
   display: none;
+}
+@media (max-width: 900px) {
+  .tabs__header {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .tabs__link {
+    padding: 12px;
+    flex: 1 1 auto;
+    font-size: 11px;
+  }
 }
 
 .articles-grid {
