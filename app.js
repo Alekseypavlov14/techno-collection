@@ -450,6 +450,47 @@ burgerButtons.forEach(button => {
   })
 })
 
+// ========== Select ==========
+try {
+  const selects = Array.from(document.querySelectorAll('[data-select]'))
+
+  const selectValueAttribute = 'data-select-value'
+  const selectOpenedCSSClass = 'select--opened'
+  
+  selects.forEach(select => {
+    const control = select.querySelector('[data-select-control]') 
+    const label = select.querySelector('[data-select-label]')
+    const options = Array.from(select.querySelectorAll('[data-select-option]'))
+
+    control.addEventListener('click', () => {
+      select.classList.toggle(selectOpenedCSSClass)
+    })
+
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        // update value
+        const value = option.getAttribute(selectValueAttribute) ?? ''
+        select.setAttribute(selectValueAttribute, value)
+
+        // update label
+        label.innerHTML = option.innerHTML
+
+        // close select
+        select.classList.remove(selectOpenedCSSClass)
+      })
+    })
+
+    // handle outside clicks
+    window.addEventListener('click', (e) => {
+      if (!select.contains(e.target)) {
+        // close select
+        select.classList.remove(selectOpenedCSSClass)
+      }
+    })
+  })
+}
+catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min

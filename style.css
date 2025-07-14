@@ -917,6 +917,71 @@ p {
   }
 }
 
+
+.select {
+  width: 100%;
+  position: relative;
+}
+.select__control {
+  position: relative;
+
+  padding: 12px 30px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--grey-900);
+}
+.select__label {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--black-1000);
+  opacity: 0.7;
+}
+.select__arrow {
+  height: 100%;
+  width: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.select__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  z-index: var(--dropdowns-z-index);
+
+  width: 100%;
+  padding: 8px 0px;
+
+  background-color: var(--grey-900);
+}
+.select:not(.select--opened) .select__dropdown {
+  display: none;
+}
+.select__option {
+  display: block;
+  padding: 8px;
+
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: var(--black-1000);
+}
+
 /* Content */
 .wrapper {
   min-height: 100%;
@@ -1765,6 +1830,27 @@ p {
 .home-catalog-nav__subcategory:hover {
   color: var(--primary-100);
 }
+.home-catalog-select {
+  border-radius: 5px;
+  border: 1px solid #C7A27E30;
+
+  display: none;
+}
+.home-catalog-select .select:first-child .select__control {
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid #C7A27E30;
+}
+.home-catalog-select .select:last-child .select__control {
+  border-radius: 0px 0px 5px 5px;
+  background-color: #C7A27E1A;
+}
+.home-catalog-select .select__dropdown {
+  border: 1px solid #C7A27E30;
+  border-top: none;
+}
+.home-catalog-select .select__option {
+  text-align: center;
+}
 .home-catalog-content {
   margin-top: 30px;
 
@@ -1776,6 +1862,14 @@ p {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 798px) {
+  .home-catalog-nav {
+    display: none;
+  }
+  .home-catalog-select {
+    display: block;
+  }
 }
 
 .home-order {
