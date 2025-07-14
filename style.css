@@ -2293,7 +2293,30 @@ p {
 
 }
 @media (max-width:500px) {
-  
+  .brands__content {
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    gap: 10px;
+  }
+  .brand-card {
+    min-height: 120px;
+  }
+  .brand-card__image {
+    width: 120px;
+  }
+  .brand-card:hover .brand-card__image {
+    top: 12px;
+    left: 12px;
+    width: 80px;
+  }
+  .brand-card__text {
+    padding: 0px 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 10px;
+  }
+  .brand-card:hover .brand-card__text {
+    top: 55px;
+  }
 }
 
 
@@ -2312,6 +2335,7 @@ p {
 .home-about__image {
   flex: 1 1 auto;
   max-width: 50%;
+  aspect-ratio: 1;
 
   display: flex;
   justify-content: center;
@@ -2396,7 +2420,7 @@ p {
 }
 
 @media (max-width:1150px) {
-
+    
 }
 @media (max-width:768px) {
 
