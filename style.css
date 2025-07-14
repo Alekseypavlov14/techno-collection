@@ -2193,6 +2193,12 @@ p {
   padding: 90px 0px;
   background-color: var(--grey-900);
 }
+@media (max-width: 500px) {
+  .home-hard-to-choose {
+    margin-top: 20px;
+    padding: 50px 0px;
+  }
+}
 
 .form {
   display: grid;
@@ -2230,7 +2236,7 @@ p {
   margin-top: 35px;
   max-width: 470px;
 }
-.form__panel {
+.form__controls {
   margin-top: 40px;
 
   display: flex;
@@ -2258,25 +2264,7 @@ p {
   font-size: 14px;
   font-family: 'Roboto Flex', sans-serif;
 }
-
-@media (max-width:1150px) {
-  .form__content {
-    padding: 40px 30px;
-  }
-  .form__subtitle {
-    margin-top: 20px;
-  }
-  .form__panel {
-    gap: 20px;
-    margin-top: 30px;
-  }
-  .home-hard-to-choose {
-    margin-top: 100px;
-    padding: 70px 0px;
-    background-color: var(--grey-900);
-  }
-}
-@media (max-width:768px) {
+@media (max-width: 1150px) {
   .form {
     display: flex;
     text-align: center;
@@ -2285,42 +2273,35 @@ p {
     display: none;
   }
   .form__content {
+    padding: 60px 30px;
     width: 100%;
-    padding: 50px 0px;
   }
   .form__subtitle {
     margin: 0 auto;
     margin-top: 30px;
   }
-  .home-hard-to-choose {
-    margin-top: 80px;
-    padding: 50px 0px;
-    background-color: var(--grey-900);
+  .form__controls {
+    gap: 20px;
+    margin-top: 30px;
   }
 }
-@media (max-width:500px) {
-  .form__input::placeholder {
-    font-size: 10px;
-  }
-  .form__input {
-    padding: 10px 20px;
-  }
-  .form__button {
-    font-size: 12px;
+@media (max-width: 500px) {
+  .form__content {
+    padding: 0px;
+    background-color: transparent;
   }
   .form__subtitle {
     font-size: 12px;
   }
-  .form__panel {
+  .form__input {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .form__button {
+    font-size: 12px;
+  }
+  .form__controls {
     gap: 10px;
-  }
-  .home-hard-to-choose {
-    margin-top: 60px;
-    padding: 0px;
-    background-color: var(--grey-900);
-  }
-  .form__content {
-    background-color: var(--grey-900);
   }
 }
 
@@ -2362,13 +2343,15 @@ p {
 
   transition: 0.5s all;
 }
-.brand-card:hover .brand-card__image {
-  max-height: 30px;
-
-  top: 30px;
-  left: 30px;
-
-  transform: none;
+@media (hover: hover) {
+  .brand-card:hover .brand-card__image {
+    max-height: 30px;
+  
+    top: 30px;
+    left: 30px;
+  
+    transform: none;
+  }
 }
 .brand-card__text {
   display: block;
@@ -2385,43 +2368,40 @@ p {
 
   transition: 0.5s;
 }
-.brand-card:hover .brand-card__text {
-  top: 90px;
+@media (hover: hover) {
+  .brand-card:hover .brand-card__text {
+    top: 90px;
+  }
 }
-
-@media (max-width:1150px) {
-
-}
-@media (max-width:768px) {
-
-}
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .brands__content {
-    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
   }
   .brand-card {
     min-height: 120px;
   }
   .brand-card__image {
-    width: 120px;
-  }
-  .brand-card:hover .brand-card__image {
-    top: 12px;
-    left: 12px;
-    width: 80px;
+    max-width: 120px;
   }
   .brand-card__text {
     padding: 0px 10px;
+
+    font-size: 10px;
     font-weight: 500;
     line-height: 1.2;
-    font-size: 10px;
   }
-  .brand-card:hover .brand-card__text {
-    top: 55px;
+  @media (hover: hover) {
+    .brand-card:hover .brand-card__image {
+      top: 12px;
+      left: 12px;
+      width: 80px;
+    }
+    .brand-card:hover .brand-card__text {
+      top: 55px;
+    }
   }
 }
-
 
 
 .home-about {
@@ -2516,31 +2496,23 @@ p {
 
   color: #000000B3;
 }
+@media (max-width: 500px) {
+  .home-articles {
+    border-radius: 0px 0px 20px 20px;
+  }
+}
 
 .home-questions-or-propositions {
   padding: 120px 0px;
   background-color: var(--grey-900);
 }
-
-@media (max-width:1150px) {
-    
-}
-@media (max-width:768px) {
-
-}
-@media (max-width:500px) {
-  .home-articles {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
+@media (max-width: 500px) {
   .home-questions-or-propositions {
     margin-top: 20px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    padding: 50px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
 }
-
-
 
 .footer {
   padding: 60px 0;
