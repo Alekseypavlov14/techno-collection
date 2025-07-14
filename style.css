@@ -151,6 +151,12 @@ p {
   border-color: var(--primary-100);
   background-color: var(--grey-100);
 }
+@media (max-width: 798px) {
+  .button {
+    padding: 16px 30px;
+    font-size: 12px;
+  }
+}
 
 .checkbox {
   --size: 16px;
