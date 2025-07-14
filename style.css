@@ -2435,6 +2435,23 @@ p {
   background-color: var(--grey-900);
 }
 
+@media (max-width:1150px) {
+    
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:500px) {
+  .home-articles {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .home-questions-or-propositions {
+    margin-top: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
 
 
 
