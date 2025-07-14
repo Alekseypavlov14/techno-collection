@@ -3224,6 +3224,47 @@ p {
   color: var(--white-1000);
 }
 
+@media (max-width:1150px) {
+  .banner-advantages__card {
+    padding: 25px 10px;
+  }
+  .banner-advantages__text {
+    font-size: 12px;
+  }
+  .banner-advantages__number {
+    font-size: 36px;
+  }
+}
+@media (max-width:768px) {
+  .banner-advantages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner-advantages__card {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 10px;
+  }
+}
+@media (max-width:500px) {
+  .banner-advantages__number {
+    font-size: 32px;
+    line-height: 1;
+    flex: 0 0 50px;
+  }
+  .banner-advantages {
+    background-color: transparent;
+  }
+  .banner-advantages__card {
+    padding: 15px 10px;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  .banner-advantages__text  {
+    font-size: 10px;
+  }
+}
+
 .about-us-advice {
   background-color: var(--grey-900);
   padding: 90px 0;
