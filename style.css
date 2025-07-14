@@ -1772,6 +1772,9 @@ p {
   }
 }
 @media (max-width: 798px) {
+  .main {
+    padding-bottom: 80px;
+  }
   .main-slider__title {
     max-width: 300px;
     margin: 0px auto;
@@ -1810,6 +1813,31 @@ p {
   text-transform: uppercase;
   color: var(--white-1000);
 }
+@media (max-width: 798px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-card {
+    padding: 15px 10px 10px 10px;
+    gap: 15px;
+  }
+  .category-card__image {
+    max-height: 90px;
+  }
+  .category-card__title {
+    text-align: center;
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 500px) {
+  .category-card__image {
+    max-height: 50px;
+  }
+}
+
 .main-info {
   margin-top: 30px;
   display: flex;
@@ -1892,8 +1920,80 @@ p {
   color: var(--white-1000);
 }
 .main-info-proposition__button {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 1150px) {
+  .main-info-sales__content {
+    left: 30px;
+    bottom: 30px;
+  }
+  .main-info-sales__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .main-info-proposition__content {
+    padding: 20px;
+  }
+  .main-info-proposition__title {
+    font-size: 18px;
+  }
+  .main-info-proposition__subtitle {
+    font-size: 14px;
+  }
+  .main-info-proposition__button {
+    padding: 14px 25px;
+  }
+}
+@media (max-width: 798px) {
+  .main-info {
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    overflow-x: auto;
+  }
+  .main-info::-webkit-scrollbar {
+    display: none;
+  }
+  .main-info-sales,
+  .main-info-proposition {
+    aspect-ratio: 28 / 22;
+    flex: 0 0 280px;
+  }
+  .main-info-sales__content {
+    width: 100%;
+    height: 100%;
+
+    bottom: 0;
+    left: 0;
+
+    padding: 20px;
+  }
+  .main-info-sales__title {
+    margin-top: 40px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .main-info-sales__button {
+    margin-top: 20px;
+    padding: 12px 30px;
+  }
+  .main-info-proposition__content {
+    bottom: 0px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .main-info-proposition__subtitle {
+    font-size: 12px;
+  }
 }
 
 .home-catalog {
