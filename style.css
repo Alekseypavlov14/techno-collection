@@ -326,9 +326,6 @@ p {
 }
 
 .product-card {
-  min-width: 250px;
-  max-width: 320px;
-
   padding: 15px 30px 30px 30px;
   border-radius: 15px;
 
