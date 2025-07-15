@@ -23,7 +23,7 @@
               <span>Каталог товаров</span>
             </button>
 
-            <input id="header-search" class="header-search__input" size="0">
+            <input id="header-search" class="header-search__input" size="1">
             <img class="header-search__icon" src="./img/header-search-icon.svg">
           </label>
 
@@ -371,6 +371,31 @@
 
     <section class="section product-browser">
       <div class="container">
+        <div class="product-browser__mobile">
+          <div data-dropdown class="dropdown">
+            <div data-dropdown-control class="dropdown__control">
+              <div class="dropdown__label">Популярные</div>
+              <div class="dropdown__arrow">
+                <img src="./img/dropdown-arrow-white.svg" alt="">
+              </div>
+            </div>
+            <div class="dropdown__dropdown">
+              Выпадающее меню с фильтрами
+            </div>
+          </div>
+
+          <div data-dropdown class="dropdown dropdown--align-right">
+            <div data-dropdown-control class="dropdown__control">
+              <div class="dropdown__label">
+                <img src="./img/filters-icon.svg" />
+              </div>
+            </div>
+            <div class="dropdown__dropdown">
+              Выпадающее меню с фильтрами
+            </div>
+          </div>
+        </div>
+
         <div class="product-browser__header">
           <div class="product-browser__header-left product-browser__status">Всего 3500 товаров</div>
 
@@ -822,7 +847,7 @@
             Напишите нам о них и мы обязательно<br /> их рассмотрим в ближайшее время.
           </div>
 
-          <div class="form__panel">
+          <div class="form__controls">
             <input type="text" class="form__input" placeholder="Имя">
             <input data-form-phone-number type="text" class="form__input" placeholder="+7 (___) ___ __ __">
             <button class="button button--block form__button">ОСТАВИТЬ ЗАЯВКУ</button>

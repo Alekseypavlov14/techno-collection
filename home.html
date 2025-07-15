@@ -578,7 +578,9 @@
 
     <section data-scalable-image-block
       class="section section--round-top section--round-bottom section--overlap home-order">
-      <img data-scalable-image class="scrollable-image" src="./img/home-order-backgroung.png" alt="">
+      <div data-scalable-image class="home-order__image scrollable-image">
+        <img src="./img/home-order-backgroung.png" alt="">
+      </div>
 
       <div class="container">
         <div class="home-order__content">
@@ -598,9 +600,9 @@
         </h2>
 
         <div class="advantages-block">
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-delivery.svg" alt="">
               </div>
             </div>
@@ -609,12 +611,12 @@
               <div class="advantages-card__text">Осуществляем доставку из Уфы по всей России</div>
             </div>
           </div>
-          <div class="advantages-block__card-photo">
+          <div class="advantages-card--photo">
             <img src="./img/advantages-photo.png" alt="">
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-guarantee.svg" alt="">
               </div>
             </div>
@@ -624,9 +626,9 @@
                 без проблем</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-dealer.svg" alt="">
               </div>
             </div>
@@ -636,9 +638,9 @@
                 поступление техники при оформлении заявки</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-storage.svg" alt="">
               </div>
             </div>
@@ -648,9 +650,9 @@
                 востребованных моделей для быстрой реализации</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-best-price.svg" alt="">
               </div>
             </div>
@@ -660,9 +662,9 @@
                 лучшую цену. Можем привезти товар под заказ</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-service.svg" alt="">
               </div>
             </div>
@@ -672,9 +674,9 @@
                 гарантийного и сервисного обслуживания</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-key.svg" alt="">
               </div>
             </div>
@@ -684,9 +686,9 @@
                 Визуализация дизайнерами. Первый запуск. Постгарантийная поддержка клиентов. </div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-design.svg" alt="">
               </div>
             </div>
@@ -696,9 +698,9 @@
                 в интерьер как компактных квартир, так и внушительных загородных коттеджей</div>
             </div>
           </div>
-          <div class="advantages-block__card palette palette--hoverable">
-            <div class="advantages-card__icon-part">
-              <div class="advantage-icon">
+          <div class="advantages-card palette palette--hoverable">
+            <div class="advantages-card__icon-box">
+              <div class="advantages-card__icon">
                 <img src="./img/home-about-icon-assortment.svg" alt="">
               </div>
             </div>
@@ -726,7 +728,7 @@
             проконсультирует по ассортименту товаров и поможет подобрать оптимальное решение.
           </div>
 
-          <div class="form__panel">
+          <div class="form__controls">
             <input type="text" class="form__input" placeholder="Имя">
             <input data-form-phone-number type="text" class="form__input" placeholder="+7 (___) ___ __ __">
             <button class="button button--block form__button">ОСТАВИТЬ ЗАЯВКУ</button>
@@ -946,7 +948,7 @@
             Напишите нам о них и мы обязательно<br /> их рассмотрим в ближайшее время.
           </div>
 
-          <div class="form__panel">
+          <div class="form__controls">
             <input type="text" class="form__input" placeholder="Имя">
             <input data-form-phone-number type="text" class="form__input" placeholder="+7 (___) ___ __ __">
             <button class="button button--block form__button">ОСТАВИТЬ ЗАЯВКУ</button>

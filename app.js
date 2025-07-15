@@ -481,11 +481,28 @@ try {
     })
 
     // handle outside clicks
-    window.addEventListener('click', (e) => {
-      if (!select.contains(e.target)) {
-        // close select
-        select.classList.remove(selectOpenedCSSClass)
-      }
+    onOutsideClick(select, () => {
+      select.classList.remove(selectOpenedCSSClass)
+    })
+  })
+}
+catch {}
+
+// ========== dropdowns ==========
+try {
+  const dropdowns = Array.from(document.querySelectorAll('[data-dropdown]'))
+  
+  const dropdownOpenedCSSClass = 'dropdown--opened'
+  
+  dropdowns.forEach(dropdown => {
+    const control = dropdown.querySelector('[data-dropdown-control]')
+  
+    control.addEventListener('click', () => {
+      dropdown.classList.toggle(dropdownOpenedCSSClass)
+    })
+  
+    onOutsideClick(dropdown, () => {
+      dropdown.classList.remove(dropdownOpenedCSSClass)
     })
   })
 }
@@ -503,4 +520,9 @@ function sum(array) {
 function average(array) {
   if (!array.length) return 0
   return sum(array) / array.length
+}
+function onOutsideClick(block, callback) {
+  window.addEventListener('click', (e) => {
+    if (!block.contains(e.target)) callback(e)
+  })
 }
