@@ -1530,6 +1530,7 @@ p {
 }
 .header-catalog-dropdown__right {
   flex: 1 1 50%;
+  min-width: 0px;
   padding: 50px 10px 50px 100px; 
 
   background-color: var(--grey-100);
@@ -2270,7 +2271,6 @@ p {
   justify-content: space-between;
   align-items: start;
   padding: 35px 25px;
-  padding-left: 0;
   color: var(--white-1000);
   font-family: 'Roboto Flex', 'sans-serif';
 }
