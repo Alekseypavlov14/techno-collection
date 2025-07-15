@@ -319,15 +319,17 @@ multipleSliders.forEach(slider => {
   const slides = slider.querySelector('[data-multiple-slider-slides]')
   
   let index = 0
-  
-  let maxIndex = computeMaxIndex()
 
   left.addEventListener('click', () => {
+    let maxIndex = computeMaxIndex()
     index = clamp(0, index - 1, maxIndex)
+    
     updateIndex()
   })
   right.addEventListener('click', () => {
+    let maxIndex = computeMaxIndex()
     index = clamp(0, index + 1, maxIndex)
+    
     updateIndex()
   })
 
