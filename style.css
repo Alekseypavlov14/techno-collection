@@ -3657,6 +3657,36 @@ p {
   margin-top: 10px;
 }
 
+@media (max-width:1150px) {
+  .payment-methods__card {
+    padding: 40px 30px;
+  }
+  .payment-methods {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width:768px) {
+  .payment-methods .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .payment-methods__card {
+    padding: 30px 20px;
+  }
+  .payment-methods__card-list {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .payment-methods {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .payment-methods__card-list ul li{
+    font-size: 12px;
+  }
+}
+
 /*---------------------------------ratings----------------------------*/
 
 .rating-articles {
@@ -3726,6 +3756,35 @@ p {
 }
 .question--opened .question__button {
   transform: rotateZ(45deg);
+}
+
+@media (max-width:768px) {
+  .question__title {
+    font-size: 16px;
+  }
+  .question {
+    padding: 20px;
+  }
+  .question:first-child {
+    padding-top: 25px;
+  }
+  .question:last-child {
+    padding-bottom: 25px;
+  }
+  .question__button {
+    width: 20px;
+    height: 20px;
+  }
+  .customers-question {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width:500px) {
+  .customers-question {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 
@@ -3994,4 +4053,25 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width:768px) {
+  .design-condition__card-title {
+    font-size: 16px;
+  }
+  .design-condition__card-text {
+    font-size: 12px;
+  }
+  .design-condition__card {
+    padding: 30px 130px 30px 20px;
+  }
+  .design-condition__card-icon {
+    bottom: 30px;
+  }
+  .design-condition .container {
+    gap: 20px;
+  }
+  .design-condition {
+    padding-bottom: 60px;
+  }
 }
