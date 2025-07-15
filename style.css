@@ -2749,18 +2749,16 @@ p {
   .home-about__subtitle {
     margin-top: 20px;
     max-width: 100%;
-  }
-  .home-about__text {
-    margin-top: 30px;
-    max-width: 100%;
-  }
-  .home-about__subtitle {
+
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     color: var(--grey-500);
   }
   .home-about__text {
+    margin-top: 30px;
+    max-width: 100%;
+
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -3812,6 +3810,66 @@ p {
 }
 .about-us-advice__button {
   margin-top: 50px;
+}
+@media (max-width: 1150px) {
+  .about-us-advice .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-us-advice__content {
+    width: 100%;
+  }
+  .about-us-advice__text {
+    max-width: 600px;
+  }
+}
+@media (max-width: 798px) {
+  .about-us-advice {
+    padding: 60px 0px;
+    margin-top: 0px;
+  }
+  .about-us-advice .container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0px;
+  }
+  .about-us-advice__content {
+    display: contents;
+  }
+  .about-us-advice__image {
+    display: flex;
+    align-items: center;
+
+    grid-row: 2 / 2;
+  
+    width: 100%;
+    aspect-ratio: 34 / 28;
+
+    margin-top: 30px;
+  }
+  .about-us-advice__image img {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+  }
+  .about-us-advice__text {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about-us-advice__title {
+    font-size: 23px;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+  .about-us-advice__text {
+    font-size: 12px;
+  }
+  .about-us-advice__button {
+    margin-top: 40px;
+  }
 }
 
 
