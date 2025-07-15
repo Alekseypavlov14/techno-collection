@@ -3935,6 +3935,34 @@ p {
 .designer-banner__button {
   margin-top: 60px;
 }
+@media (max-width: 1150px) {
+  .designer-banner__title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  .designer-banner__subtitle {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .designer-banner__button {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 798px) {
+  .designer-banner__title {
+    text-align: center;
+    font-size: 36px;
+  }
+  .designer-banner__subtitle {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .designer-banner__button {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
 
 .reward {
   width: 100%;
