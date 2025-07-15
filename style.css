@@ -830,6 +830,18 @@ p {
     top: 40px;
   }
 }
+@media (max-width: 798px) {
+  .banner__subtitle br {
+    display: none;
+  }
+  .banner__subtitle {
+    padding: 0 20px;
+  }
+  .banner__center {
+    width: 100%;
+  }
+}
+
 
 .rating-badge {
   padding: 10px 20px;
@@ -3234,6 +3246,7 @@ p {
 }
 
 
+
 .brand-articles {
   background-color: var(--grey-900);
   padding-top: 80px;
@@ -3284,6 +3297,7 @@ p {
 .other-brands {
   background-color: var(--grey-900);
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 .other-brands__slider {
   margin-top: 60px;
@@ -3296,6 +3310,12 @@ p {
 }
 .other-brands-card__image {
   max-width: 100%;
+}
+@media (max-width:500px) {
+  .other-brands {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 /*-------------------------- Product card -----------------------------*/
