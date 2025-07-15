@@ -316,7 +316,7 @@ p {
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 798px) {
   .section--overlap {
     margin-top: -20px;
   }
@@ -2197,7 +2197,7 @@ p {
     padding: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 798px) {
   .home-order__image {
     min-height: 430px;
     border-radius: 20px;
@@ -3025,16 +3025,16 @@ p {
 /*-------------------------------brand---------------------------------*/
 
 .brand-description {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 .brand-description .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 .brand-description__image {
-  flex: 0 0 50%;
+  height: fit-content;
+
   border-radius: 20px;
   overflow: hidden;
 }
@@ -3044,18 +3044,38 @@ p {
 }
 .brand-description__content {
   font-family: 'Roboto Flex', 'sans-serif';
+  letter-spacing: 0px;
   color: var(--white-1000);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .brand-description__text {
+  margin-top: 30px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  max-width: 540px;
-  margin-top: 30px;
 }
 .brand-subcategories {
   margin-top: 60px;
   overflow: clip;
+}
+@media (max-width: 798px) {
+  .brand-description {
+    padding-top: 60px;
+  }
+  .brand-description .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .brand-description__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }
 
 .banner-info-cards {
@@ -3519,7 +3539,7 @@ p {
     font-size: 36px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 798px) {
   .banner-advantages {
     grid-template-columns: repeat(2, 1fr);
   }
