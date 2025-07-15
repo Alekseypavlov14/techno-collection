@@ -3274,8 +3274,10 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  align-items: center;
 }
 .about-us-advice__image {
+  aspect-ratio: 1;
   border-radius: 30px;
   overflow: hidden;
 
@@ -3286,6 +3288,7 @@ p {
 .about-us-advice img {
   width: 100%;
   min-height: 100%;
+  aspect-ratio: 1;
 }
 .about-us-advice__content {
   padding: 70px 40px;
@@ -3314,6 +3317,7 @@ p {
 .about-us-advice__button {
   margin-top: 50px;
 }
+
 
 /*--------------------------------credits----------------------------------*/
 
