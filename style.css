@@ -594,7 +594,7 @@ p {
 
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
 }
 .article-card {
@@ -641,6 +641,7 @@ p {
 @media (max-width: 798px) {
   .articles-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
   .article-card {
     aspect-ratio: auto;
@@ -685,7 +686,7 @@ p {
 }
 @media (max-width: 500px) {
   .articles-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -1382,7 +1383,7 @@ p {
 }
 .header-customers-dropdown .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 24px;
 }
 .header-customers-dropdown-item {
@@ -2616,7 +2617,7 @@ p {
 .home-about__advantages {
   margin-top: 45px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 .home-about__advantages-card {
@@ -3101,7 +3102,7 @@ p {
   margin-top: 60px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
   width: 100%;
 }
@@ -3608,7 +3609,7 @@ p {
 }
 .payment-methods .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 
   font-family: 'Roboto Flex', 'sans-serif';
