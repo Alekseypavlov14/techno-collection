@@ -2267,24 +2267,31 @@ p {
   gap: 30px;
 }
 .advantages-card {
+  padding: 35px 25px;
+
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  padding: 35px 25px;
+  align-items: flex-start;
+
   color: var(--white-1000);
   font-family: 'Roboto Flex', 'sans-serif';
+  letter-spacing: 0px;
 }
 .advantages-card--photo {
-  grid-row-start: 1;
-  grid-row-end: 4;
-  grid-column-start: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   border-radius: 20px;
   overflow: hidden;
+}
+.advantages-card--photo-1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+.advantages-card--photo-2 {
+  display: none;
 }
 .advantages-card--photo img {
   flex: 1 1 auto;
@@ -2350,6 +2357,14 @@ p {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .advantages-card__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .advantages-card__text {
+    font-size: 12px;
+    font-weight: 400;
+  }
   .advantages-card--photo {
     grid-column: 1 / -1;
     grid-row: auto;
@@ -2357,6 +2372,13 @@ p {
     aspect-ratio: 34 / 31;
     border-radius: 15px;
     overflow: hidden;
+  }
+  .advantages-card--photo-1 {
+    grid-row: 4 / 4;
+  }
+  .advantages-card--photo-2 {
+    display: block;
+    grid-row: 8 / 8;
   }
 }
 
