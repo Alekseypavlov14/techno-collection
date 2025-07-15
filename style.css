@@ -498,6 +498,23 @@ p {
   }
 }
 
+.product-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+@media (max-width: 798px) {
+  .product-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .product-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
 .tabs {
   width: 100%;
 }
@@ -2098,10 +2115,6 @@ p {
 }
 .home-catalog-content {
   margin-top: 30px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
 }
 .home-catalog-footer {
   margin-top: 40px;
@@ -2118,15 +2131,6 @@ p {
   }
   .home-catalog-select {
     display: block;
-  }
-  .home-catalog-content {
-    margin-top: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-@media (max-width: 500px) {
-  .home-catalog-content {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -2951,11 +2955,6 @@ p {
 .product-browser__result-header {
   margin-bottom: 24px;
 }
-.product-browser__result-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-}
 .product-browser__result-footer {
   display: flex;
   align-items: center;
@@ -3001,9 +3000,6 @@ p {
   .product-browser__badge {
     flex: 0 0 auto;
   }
-  .product-browser__result-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
 }
 @media (max-width: 500px) {
   .product-browser__badges {
@@ -3015,9 +3011,6 @@ p {
     font-size: 11px;
     font-weight: 500;
     line-height: 1.3;
-  }
-  .product-browser__result-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -3472,23 +3465,9 @@ p {
   opacity: 0.7;
 }
 
-.product-info__products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 24px;
-}
-
 .product-recommendations {
   width: 100%;
   padding-bottom: 100px;
-}
-.product-recommendations__cards {
-  width: 100%;
-  margin-top: 60px;
-  
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 24px;
 }
 
 /*-------------------------- About us -----------------------------*/
