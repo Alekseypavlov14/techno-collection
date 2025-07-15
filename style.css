@@ -4008,6 +4008,53 @@ p {
   display: block;
   width: 100%;
 }
+@media (max-width: 1150px) {
+  .reward__badge .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .reward__logo img {
+    max-height: 90px;
+  }
+  .reward__title {
+    text-wrap: balance;
+  }
+  .reward__image {
+    margin-top: -80px;
+  }
+}
+@media (max-width: 798px) {
+  .reward__badge {
+    padding: 60px 0px;
+  }
+  .reward__badge .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .reward__logo img {
+    max-height: 65px;
+  }
+  .reward__title {
+    text-align: center;
+
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .reward__button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .reward__image {
+    margin-top: -20px;
+  }
+}
+@media (max-width: 500px) {
+  .reward__title {
+    font-size: 18px;
+  }
+}
 
 .algorithm {
   padding: 120px 0px;
