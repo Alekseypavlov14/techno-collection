@@ -3137,11 +3137,16 @@ p {
   .product-browser .container {
     display: grid;
     grid-template-columns: 100%;
+    gap: 0px;
   }
   .product-browser__mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .product-browser__badges {
+    margin-bottom: 15px;
   }
 
   .product-browser__header,
