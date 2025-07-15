@@ -272,8 +272,33 @@
 
     <section class="section product-browser">
       <div class="container">
+        <div class="product-browser__mobile">
+          <div data-dropdown class="dropdown">
+            <div data-dropdown-control class="dropdown__control">
+              <div class="dropdown__label">Популярные</div>
+              <div class="dropdown__arrow">
+                <img src="./img/dropdown-arrow-white.svg" alt="">
+              </div>
+            </div>
+            <div class="dropdown__dropdown">
+              Выпадающее меню с фильтрами
+            </div>
+          </div>
+
+          <div data-dropdown class="dropdown dropdown--align-right">
+            <div data-dropdown-control class="dropdown__control">
+              <div class="dropdown__label">
+                <img src="./img/filters-icon.svg" />
+              </div>
+            </div>
+            <div class="dropdown__dropdown">
+              Выпадающее меню с фильтрами
+            </div>
+          </div>
+        </div>
+
         <div class="product-browser__header product-browser__header--palette palette">
-          <div class="product-browser__status">Всего 3500 товаров</div>
+          <div class="product-browser__header-left product-browser__status">Всего 3500 товаров</div>
 
           <div class="product-browser__header-right">
             <div class="product-browser__header-title">
