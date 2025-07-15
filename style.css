@@ -1094,7 +1094,7 @@ p {
   left: 0px;
 
   width: 100vw;
-  max-width: calc(100vw - 20px);
+  max-width: calc(100vw - 40px);
   padding: 10px 15px;
   border-radius: 5px;
 
@@ -1107,6 +1107,11 @@ p {
 .dropdown--align-right .dropdown__dropdown {
   left: auto;
   right: 0px;
+}
+@media (max-width: 798px) {
+  .dropdown__dropdown {
+    max-width: calc(100vw - 20px);
+  }
 }
 
 /* Content */
