@@ -2407,6 +2407,27 @@ p {
     display: block;
     grid-row: 8 / 8;
   }
+
+
+
+  .design-advantages .advantages-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .design-advantages .advantages-card--photo {
+    aspect-ratio: 34 / 20;
+  }
+}
+
+@media (max-width: 600px) {
+  .design-advantages .advantages-block {
+    grid-template-columns: 100%;
+  }
+  .advantages-card {
+    border-radius: 10px;
+  }
+  .advantages-card--photo {
+    border-radius: 15px;
+  }
 }
 
 
@@ -4471,6 +4492,14 @@ p {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+@media (max-width: 600px) {
+  .design-advantages .advantages-card--photo {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 }
 
 .design-condition {
