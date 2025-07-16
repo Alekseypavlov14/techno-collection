@@ -401,6 +401,32 @@ try {
       })
     })
   })
+
+  // mobile slider
+  const algorithmSliders = Array.from(document.querySelectorAll('[data-algorithm-slider]'))
+
+  algorithmSliders.forEach(slider => {
+    const left = slider.querySelector('[data-algorithm-slider-left]')
+    const right = slider.querySelector('[data-algorithm-slider-right]')
+    const slides = slider.querySelector('[data-algorithm-steps]')
+    
+    const maxIndex = slides.children.length - 1
+
+    let index = 0
+
+    left.addEventListener('click', () => {
+      index = clamp(0, index - 1, maxIndex)
+      updateIndex()
+    })
+    right.addEventListener('click', () => {
+      index = clamp(0, index + 1, maxIndex)
+      updateIndex()
+    })
+
+    function updateIndex() {
+      slider.style.setProperty('--index', index)
+    }
+  })
 }
 catch {}
 
