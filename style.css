@@ -3388,7 +3388,12 @@ p {
 .other-brands-card__image {
   max-width: 100%;
 }
-@media (max-width:500px) {
+@media (max-width: 798px) {
+  .other-brands__slider {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
   .other-brands {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
