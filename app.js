@@ -350,20 +350,35 @@ multipleSliders.forEach(slider => {
 })
 
 // ========== Preview ==========
-const previews = Array.from(document.querySelectorAll('[data-preview]'))
+try {
+  const previews = Array.from(document.querySelectorAll('[data-preview]'))
+  const activeCSSClass = 'active'
+  
+  previews.forEach(preview => {
+    const options = preview.querySelectorAll('[data-preview-option]')
+    const current = preview.querySelector('[data-preview-current]')
+    const links = Array.from(preview.querySelectorAll('[data-preview-link]'))
+    const image = current.querySelector('img')
+  
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        const src = option.getAttribute('data-preview-option')
+        image.setAttribute('src', src)
+      })
+    })
+  
+    links.forEach((link, index) => {
+      link.addEventListener('click', () => {
+        options.forEach(option => option.classList.remove(activeCSSClass))
+        options[index].classList.add(activeCSSClass)
 
-previews.forEach(preview => {
-  const options = preview.querySelectorAll('[data-preview-option]')
-  const current = preview.querySelector('[data-preview-current]')
-  const image = current.querySelector('img')
-
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      const src = option.getAttribute('data-preview-option')
-      image.setAttribute('src', src)
+        links.forEach(link => link.classList.remove(activeCSSClass))
+        links[index].classList.add(activeCSSClass)
+      })
     })
   })
-})
+}
+catch {}
 
 // ========== Algorithm ==========
 try {
