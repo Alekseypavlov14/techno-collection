@@ -1192,6 +1192,9 @@ p {
   text-transform: uppercase;
   color: var(--white-1000);
 }
+.header-search__button-icon-active {
+  display: none;
+}
 .header-search__input {
   display: block;
   min-width: 0px;
@@ -1374,6 +1377,15 @@ p {
   }
   .header-search__button span {
     display: none;
+  }
+  .header-search__button .header-search__button-icon-active {
+    display: none;
+  }
+  .header-search__button.active .header-search__button-icon {
+    display: none;
+  }
+  .header-search__button.active .header-search__button-icon-active {
+    display: block;
   }
   .header-search__icon {
     height: 14px;

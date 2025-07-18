@@ -19,7 +19,8 @@
         <div class="header__center">
           <label for="header-search" class="header-search">
             <button id="header-catalog-dropdown-trigger" class="header-search__button">
-              <img src="./img/header-search-catalog-icon.svg">
+              <img class="header-search__button-icon" src="./img/header-search-catalog-icon.svg">
+              <img class="header-search__button-icon-active" src="./img/header-catalog-toggler-cross.svg" alt="">
               <span>Каталог товаров</span>
             </button>
 
@@ -31,6 +32,10 @@
             <a class="header-phone__link" href="tel:+73472008873">+7 (347) 200-88-73</a>
             <div class="header-phone__hint">Вам перезвонить?</div>
           </div>
+        </div>
+
+        <div class="header-call">
+          <img src="./img/header-call-mobile-icon.svg" alt="">
         </div>
 
         <div class="header-icons">
@@ -48,6 +53,10 @@
             <img src="./img/header-icons-cart.svg" alt="">
             <div class="header-icon__text">Корзина</div>
           </a>
+        </div>
+
+        <div data-burger-button class="burger-button">
+          <div class="burger-button__lines"></div>
         </div>
       </div>
 
@@ -170,33 +179,38 @@
       <div id="header-catalog-dropdown" class="header-dropdown header-catalog-dropdown">
         <div class="header-catalog-dropdown__left">
           <div class="header-catalog-dropdown-menu">
-            <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+            <a href="category.html">
+              <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника для кухни</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника для кухни</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника по уходу за бельем</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника по уходу за бельем</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Техника для дома</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Техника для дома</div>
-            </div>
-
-            <div class="header-catalog-dropdown-menu__link">
-              <div class="header-catalog-dropdown-menu__link-icon">
-                <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+            </a>
+            <a href="">
+              <div class="header-catalog-dropdown-menu__link">
+                <div class="header-catalog-dropdown-menu__link-icon">
+                  <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+                </div>
+                <div class="header-catalog-dropdown-menu__link-text">Аксессуары и бытовая химия</div>
               </div>
-              <div class="header-catalog-dropdown-menu__link-text">Аксессуары и бытовая химия</div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="header-catalog-dropdown__right">
@@ -218,6 +232,126 @@
         </div>
       </div>
     </header>
+
+    <sidebar id="header-catalog-sidebar" class="sidebar header-catalog-sidebar">
+      <div class="container">
+        <div data-header-catalog-sidebar-menu class="header-catalog-sidebar-menu">
+          <div class="header-catalog-sidebar-menu__steps">
+            <div data-header-catalog-sidebar-menu-step class="header-catalog-sidebar-menu__step active">
+              <div class="header-catalog-dropdown-menu">
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника для кухни
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника по уходу за бельем
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника для дома
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Аксессуары и бытовая химия
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div data-header-catalog-sidebar-menu-step class="header-catalog-sidebar-menu__step">
+              <div class="header-catalog-sidebar-menu__header">
+                <div data-header-catalog-sidebar-menu-back class="header-catalog-sidebar-menu__nav">
+                  <img src="./img/header-catalog-sidebar-menu-back-icon.svg" alt="">
+                </div>
+
+                <div data-header-catalog-sidebar-menu-category class="header-catalog-sidebar-menu__title">
+                  техника для кухни
+                </div>
+              </div>
+              <div class="header-catalog-sidebar-menu__links">
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 1</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 2</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 3</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 4</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 5</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 6</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 7</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 8</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 9</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 10</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sidebar>
 
     <nav class="navbar">
       <div class="container">

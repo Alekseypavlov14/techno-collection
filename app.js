@@ -11,6 +11,8 @@ try {
   const headerCustomersDropdown = document.getElementById('header-customers-dropdown')
   
   const headerCatalogDropdownTrigger = document.getElementById('header-catalog-dropdown-trigger')
+  const headerCatalogDropdownTogglerActiveCSSClass = 'active'
+
   const headerCatalogDropdown = document.getElementById('header-catalog-dropdown')
   const headerCatalogSidebar = document.getElementById('header-catalog-sidebar')
   
@@ -24,6 +26,8 @@ try {
     headerCustomersDropdown.classList.toggle(headerDropdownOpenedCSSClass)
   })
   headerCatalogDropdownTrigger.addEventListener('click', () => {
+    headerCatalogDropdownTrigger.classList.toggle(headerCatalogDropdownTogglerActiveCSSClass)
+
     headerCustomersDropdown.classList.remove(headerDropdownOpenedCSSClass)
 
     headerCatalogSidebar.classList.toggle(headerSidebarOpenedCSSClass)
@@ -34,9 +38,14 @@ catch {}
 
 // ========== Header Catalog Sidebar ==========
 try {
+  const headerCatalogDropdownTrigger = document.getElementById('header-catalog-dropdown-trigger')
+  const headerCatalogDropdownTogglerActiveCSSClass = 'active'
+
   const headerCatalogSidebar = document.getElementById('header-catalog-sidebar')
   const headerSidebarOpenedCSSClass = 'opened'
   const stepActiveCSSClass = 'active'
+
+  const stepChangeAnimationDuration = 500
 
   const headerCatalogSidebarMenus = Array.from(document.querySelectorAll('[data-header-catalog-sidebar-menu]'))
 
@@ -69,7 +78,11 @@ try {
     subcategoryLinks.forEach(link => {
       link.addEventListener('click', () => {
         headerCatalogSidebar.classList.remove(headerSidebarOpenedCSSClass)
-        updateStep(categoryStepIndex)
+        headerCatalogDropdownTrigger.classList.remove(headerCatalogDropdownTogglerActiveCSSClass)
+
+        setTimeout(() => {
+          updateStep(categoryStepIndex)
+        }, stepChangeAnimationDuration)
       })
     })
 

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="wrapper">
-
     <header class="header">
       <div class="container header-top">
         <a href="/" class="logo">
@@ -18,7 +19,8 @@
         <div class="header__center">
           <label for="header-search" class="header-search">
             <button id="header-catalog-dropdown-trigger" class="header-search__button">
-              <img src="./img/header-search-catalog-icon.svg">
+              <img class="header-search__button-icon" src="./img/header-search-catalog-icon.svg">
+              <img class="header-search__button-icon-active" src="./img/header-catalog-toggler-cross.svg" alt="">
               <span>Каталог товаров</span>
             </button>
 
@@ -231,6 +233,126 @@
       </div>
     </header>
 
+    <sidebar id="header-catalog-sidebar" class="sidebar header-catalog-sidebar">
+      <div class="container">
+        <div data-header-catalog-sidebar-menu class="header-catalog-sidebar-menu">
+          <div class="header-catalog-sidebar-menu__steps">
+            <div data-header-catalog-sidebar-menu-step class="header-catalog-sidebar-menu__step active">
+              <div class="header-catalog-dropdown-menu">
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link header-catalog-dropdown-menu__link--active">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-oven.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника для кухни
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-washing-machine.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника по уходу за бельем
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-vacuum-cleaner.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Техника для дома
+                    </div>
+                  </div>
+                </a>
+                <a data-header-catalog-sidebar-menu-category-link href="#">
+                  <div class="header-catalog-dropdown-menu__link">
+                    <div class="header-catalog-dropdown-menu__link-icon">
+                      <i style="--path: url(./img/header-catalog-dropdown-shampoo.svg)"></i>
+                    </div>
+                    <div data-header-catalog-sidebar-menu-category-link-label
+                      class="header-catalog-dropdown-menu__link-text">
+                      Аксессуары и бытовая химия
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div data-header-catalog-sidebar-menu-step class="header-catalog-sidebar-menu__step">
+              <div class="header-catalog-sidebar-menu__header">
+                <div data-header-catalog-sidebar-menu-back class="header-catalog-sidebar-menu__nav">
+                  <img src="./img/header-catalog-sidebar-menu-back-icon.svg" alt="">
+                </div>
+
+                <div data-header-catalog-sidebar-menu-category class="header-catalog-sidebar-menu__title">
+                  техника для кухни
+                </div>
+              </div>
+              <div class="header-catalog-sidebar-menu__links">
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 1</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 2</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 3</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 4</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 5</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 6</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 7</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 8</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 9</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+                <a data-header-catalog-sidebar-menu-subcategory-link href="subcategory.html"
+                  class="header-catalog-sidebar-menu__link">
+                  <span>Категория 10</span>
+                  <img src="./img/header-catalog-sidebar-menu-link-icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sidebar>
+
     <section class="banner banner--medium">
       <img class="banner__image" src="./img/subcategory-banner.png">
 
@@ -256,7 +378,8 @@
           <div class="contacts-info__list">
             <div class="contacts-info__card">
               <div class="contacts-info-card__title">Адрес</div>
-              <div class="contacts-info-card__text">г. Уфа, ул. Менделеева, 158 ВДНХ<br/>Ежедневно: с 10:00 до 20:00</div>
+              <div class="contacts-info-card__text">г. Уфа, ул. Менделеева, 158 ВДНХ<br />Ежедневно: с 10:00 до 20:00
+              </div>
             </div>
             <div class="contacts-info__card">
               <div class="contacts-info-card__title">Телефон</div>
@@ -279,7 +402,7 @@
             </div>
             <div class="contacts-info__card">
               <div class="contacts-info-card__title">Реквизиты</div>
-              <div class="contacts-info-card__text">ИНН 740102525523<br/>ОГРН 318028000156612</div>
+              <div class="contacts-info-card__text">ИНН 740102525523<br />ОГРН 318028000156612</div>
             </div>
           </div>
         </div>
@@ -382,6 +505,7 @@
     </footer>
 
   </div>
-  
+
 </body>
+
 </html>
