@@ -156,6 +156,10 @@ p {
     padding: 16px 30px;
     font-size: 12px;
   }
+  .button--small {
+    font-size: 12px;
+    padding: 10px 30px;
+  }
 }
 
 .checkbox {
@@ -3785,6 +3789,59 @@ p {
 .product-recommendations {
   width: 100%;
   padding-bottom: 100px;
+}
+
+@media (max-width: 1150px) {
+  .product-description__title {
+    font-size: 24px;
+  }
+  .product-description__price {
+    font-size: 20px;
+  }
+}
+@media (max-width: 798px) {
+  .product-description__description {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .product-description-benefit__label {
+    font-size: 11px;
+  }
+  .product-description__status {
+    font-size: 10px;
+  }
+  .product-description__title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .product-description__price {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .product-description__id {
+    margin-top: 20px;
+  }
+  .product-description__actions {
+    margin-top: 30px;
+  }
+  .product-description__description {
+    margin-top: 30px;
+  }
+  .product-description__benefits {
+    margin-top: 20px;
+  }
+  .product-description-offer {
+    margin-top: 35px;
+  }
+  .product-description-offer__label {
+    font-size: 12px;
+  }
+  .product-characteristics__title {
+    font-size: 16px;
+  }
+  .product-characteristics__line {
+    font-size: 11px;
+  }
 }
 
 /*-------------------------- About us -----------------------------*/
