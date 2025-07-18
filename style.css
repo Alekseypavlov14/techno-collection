@@ -3549,6 +3549,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 5px;
+
+  display: none;
 }
 .product-description-preview__link {
   --size: 8px;
@@ -3872,11 +3874,14 @@ p {
 
     height: var(--size);
     width: var(--size);
-    
+
     border: none;
   }
   .product-description-preview__image:not(.active) {
     display: none;
+  }
+  .product-description-preview__nav {
+    display: flex;
   }
 
   .product-description__description {
