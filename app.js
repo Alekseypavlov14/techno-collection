@@ -12,19 +12,83 @@ try {
   
   const headerCatalogDropdownTrigger = document.getElementById('header-catalog-dropdown-trigger')
   const headerCatalogDropdown = document.getElementById('header-catalog-dropdown')
+  const headerCatalogSidebar = document.getElementById('header-catalog-sidebar')
   
   const headerDropdownOpenedCSSClass = 'header-dropdown--opened'
+  const headerSidebarOpenedCSSClass = 'opened'
   
   headerCustomersDropdownTrigger.addEventListener('click', () => {
     headerCatalogDropdown.classList.remove(headerDropdownOpenedCSSClass)
+    headerCatalogSidebar.classList.remove(headerSidebarOpenedCSSClass)
+
     headerCustomersDropdown.classList.toggle(headerDropdownOpenedCSSClass)
   })
   headerCatalogDropdownTrigger.addEventListener('click', () => {
     headerCustomersDropdown.classList.remove(headerDropdownOpenedCSSClass)
+
+    headerCatalogSidebar.classList.toggle(headerSidebarOpenedCSSClass)
     headerCatalogDropdown.classList.toggle(headerDropdownOpenedCSSClass)
   })
 }
 catch {}
+
+// ========== Header Catalog Sidebar ==========
+try {
+  const headerCatalogSidebar = document.getElementById('header-catalog-sidebar')
+  const headerSidebarOpenedCSSClass = 'opened'
+  const stepActiveCSSClass = 'active'
+
+  const headerCatalogSidebarMenus = Array.from(document.querySelectorAll('[data-header-catalog-sidebar-menu]'))
+
+  headerCatalogSidebarMenus.forEach(menu => {
+    const steps = Array.from(menu.querySelectorAll('[data-header-catalog-sidebar-menu-step]'))
+
+    const categoryLinks = Array.from(menu.querySelectorAll('[data-header-catalog-sidebar-menu-category-link]'))
+    const categoryLinkLabels = categoryLinks.map(link => link.querySelector('[data-header-catalog-sidebar-menu-category-link-label]'))
+
+    const subcategoryLinks = Array.from(menu.querySelectorAll('[data-header-catalog-sidebar-menu-subcategory-link]'))
+
+    const backs = Array.from(menu.querySelectorAll('[data-header-catalog-sidebar-menu-back]'))
+    const categoryLabels = Array.from(menu.querySelectorAll('[data-header-catalog-sidebar-menu-category]'))
+  
+    // indicates step of menu
+    const categoryStepIndex = 0
+    const subcategoryStepIndex = 1
+
+    categoryLinks.forEach((link, index) => {
+      link.addEventListener('click', () => {
+        updateStep(subcategoryStepIndex)
+
+        // update subcategories menu title
+        categoryLabels.forEach(label => {
+          label.innerHTML = categoryLinkLabels[index].innerHTML
+        })
+      })
+    })
+
+    subcategoryLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        headerCatalogSidebar.classList.remove(headerSidebarOpenedCSSClass)
+        updateStep(categoryStepIndex)
+      })
+    })
+
+    backs.forEach(back => {
+      back.addEventListener('click', () => {
+        updateStep(categoryStepIndex)
+      })
+    })
+
+    function updateStep(index) {
+      menu.style.setProperty('--index', index)
+
+      steps.forEach(step => step.classList.remove(stepActiveCSSClass))
+      steps[index].classList.add(stepActiveCSSClass)
+    }
+  })
+}
+catch {}
+
 
 // ========== Home Catalog ==========
 try {
