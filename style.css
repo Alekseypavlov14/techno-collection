@@ -3705,7 +3705,6 @@ p {
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 0px;
-  text-transform: uppercase;
   color: var(--white-1000);
 }
 .product-info__subtitle {
@@ -3794,6 +3793,10 @@ p {
   padding-bottom: 100px;
 }
 
+.product-info .mobile {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .product-description__title {
     font-size: 24px;
@@ -3876,6 +3879,99 @@ p {
   }
   .product-characteristics__line {
     font-size: 11px;
+  }
+
+  .product-info {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .product-info .tabs__header {
+    display: none;
+  }
+  .product-info .tabs__body {
+    margin-top: 0;
+  }
+  .product-info .tabs__body .tabs__page:nth-child(1),
+  .product-info .tabs__body .tabs__page:nth-child(4),
+  .product-info .tabs__body .tabs__page:nth-child(6) {
+    display: block;
+  }
+  .product-info .tabs__page:nth-child(1),
+  .product-info .tabs__page:nth-child(4) {
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    background-color: var(--grey-200);
+  }
+  .product-info .tabs__page:first-child .product-characteristics__title {
+    font-size: 16px;
+    line-height: 1.05;
+  }
+  .product-info .tabs__page:first-child .product-characteristics__body {
+    margin-top: 30px;
+    gap: 10px;
+  }  
+  .product-info .tabs__page:first-child .product-characteristics__line {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .product-info .tabs__page:nth-child(4) {
+    margin-top: 20px;
+  }
+  .product-info__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.05;
+  }
+  .product-info-rating {
+    margin-top: 20px;
+  }
+  .product-info-rating__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .product-info__actions {
+    margin-top: 30px;
+  }
+  .product-info__actions .button {
+    padding: 10px 15px;
+  }
+  .product-info__actions .button--grey {
+    border: 1px solid var(--white-1000);
+  }
+  .product-info__comments {
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .product-info-comment__name {
+    font-size: 16px;
+  }
+  .product-info-comment__date {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .product-info-comment__body {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .product-info .tabs__page:nth-child(6) {
+    margin-top: 80px;
+  }
+  .product-info .tabs__page:nth-child(6) .product-info__title {
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+  .product-info .mobile {
+    display: block;
+  }
+  .product-recommendations {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding-bottom: 0px;
+  }
+  .product-recommendations__cards {
+    margin-top: 40px;
   }
 }
 
