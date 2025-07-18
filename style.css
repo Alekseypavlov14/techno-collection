@@ -3813,6 +3813,15 @@ p {
   .product-description__breadcrumbs {
     margin-bottom: 25px;
   }
+  .product-description__breadcrumbs .breadcrumbs__item:not(:last-child) {
+    display: none;
+  }
+  .product-description__breadcrumbs .breadcrumbs__item:last-child::before {
+    content: '< ';
+
+    font-size: 1.5em;
+    line-height: 1em;
+  }
   .product-description__content {
     flex-direction: column;
     gap: 50px;
