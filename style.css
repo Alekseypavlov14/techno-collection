@@ -957,6 +957,19 @@ p {
     --card-width: 100px;
     --gap: 20px;
   }
+  .multiple-slider__container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .multiple-slider__container::-webkit-scrollbar {
+    display: none;
+  }
+  .multiple-slider__slide {
+    scroll-snap-align: start;
+  }
+  .multiple-slider__controls {
+    display: none;
+  }
 }
 
 .product-characteristics {
