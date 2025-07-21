@@ -628,6 +628,39 @@ try {
 }
 catch {}
 
+// ========== Scroll Appear ==========
+try {
+  const scrollAppearBlocks = Array.from(document.querySelectorAll('[data-scroll-appear]'))
+  const appearedClass = 'appeared'
+
+  const windowScrollBreakpoint = 0.6
+
+  scrollAppearBlocks.forEach(block => {
+    // handle scroll
+    window.addEventListener('scroll', checkBlockForAppearing)
+
+    // handle initial block visibilities
+    checkBlockForAppearing()
+    
+    function checkBlockForAppearing() {
+      const pageY = block.offsetTop
+      const breakpoint = pageY - window.innerHeight * windowScrollBreakpoint
+
+      if (window.scrollY > breakpoint) {
+        appearBlock(block) 
+
+        // optimization
+        window.removeEventListener('scroll', checkBlockForAppearing)
+      }
+    }
+  })
+
+  function appearBlock(block) {
+    block.classList.add(appearedClass)
+  }
+}
+catch {}
+
 // ========== Utils ==========
 function clamp(min, value, max) {
   if (value < min) return min

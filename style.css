@@ -1140,6 +1140,16 @@ p {
   }
 }
 
+@media (max-width: 500px) {
+  .scroll-appear {
+    transition: 0.5s opacity, 0.5s transform;
+  }
+  .scroll-appear:not(.appeared) {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+}
+
 /* Content */
 .wrapper {
   min-height: 100%;
