@@ -3647,6 +3647,9 @@ p {
 .product-description__breadcrumbs {
   margin-bottom: 70px;
 }
+.product-description__breadcrumbs .breadcrumbs__arrow {
+  display: none;
+}
 .product-description__content {
   display: flex;
   gap: 24px;
@@ -4000,11 +4003,8 @@ p {
   .product-description__breadcrumbs .breadcrumbs__item:not(:last-child) {
     display: none;
   }
-  .product-description__breadcrumbs .breadcrumbs__item:last-child::before {
-    content: '< ';
-
-    font-size: 1.5em;
-    line-height: 1em;
+  .product-description__breadcrumbs .breadcrumbs__arrow {
+    display: block;
   }
   .product-description__content {
     flex-direction: column;
