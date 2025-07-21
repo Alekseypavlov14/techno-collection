@@ -3567,6 +3567,22 @@ p {
   margin-top: 5px;
   color: var(--grey-500);
 }
+@media (max-width: 798px) {
+  .brand-articles__content {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .brand-articles__content::-webkit-scrollbar {
+    display: none;
+  }
+  .brand-articles-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+}
 
 
 .other-brands {
