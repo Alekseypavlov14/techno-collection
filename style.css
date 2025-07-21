@@ -3083,7 +3083,7 @@ p {
     display: none;
   }
   .footer__development {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 500px) {
